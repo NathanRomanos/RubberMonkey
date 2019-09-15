@@ -1,0 +1,27 @@
+.rooms{
+  margin: 50px 0 0 5%;
+  height: 200px;
+}
+
+.rooms__titles{
+  display: flex;
+  width: 95vw;
+  justify-content: space-between;
+}
+
+.rooms__titles--view{
+  margin-right: 5%;
+  color: $color3;
+}
+
+.rooms__carousel{
+  height: 25vh;
+  width: 85%;
+  margin: 5%;
+}
+
+.rooms__carousel--item{
+  background-color: $color2;
+  width: 20vh !important;
+  height: 20vh !important;
+}

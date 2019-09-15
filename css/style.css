@@ -56,7 +56,7 @@ nav {
   height: 100vh;
   background-color: rgba(39, 55, 75, 0.9);
   padding: 5%;
-  z-index: 5; }
+  z-index: 10; }
 
 .burgerMenu__close {
   width: 40px;
@@ -90,29 +90,25 @@ nav {
       color: #ffffff;
       padding: 20px; }
 
-.rooms {
-  margin: 50px 0 0 5%;
-  height: 200px; }
-
 .devices {
   margin: 50px 0 0 5%;
   height: 200px; }
 
-.rooms__titles, .devices__titles {
+.devices__titles {
   display: flex;
   width: 95vw;
   justify-content: space-between; }
 
-.rooms__titles--view, .devices__titles--view {
+.devices__titles--view {
   margin-right: 5%;
   color: #fe8c26; }
 
-.rooms__carousel, .devices__carousel {
+.devices__carousel {
   height: 25vh;
   width: 85%;
   margin: 5%; }
 
-.rooms__carousel--item, .devices__carousel--item {
+.devices__carousel--item {
   background-color: #374b69;
   width: 20vh !important;
   height: 20vh !important; }
@@ -125,6 +121,62 @@ nav {
   margin: 5px;
   position: absolute;
   bottom: 0; }
+
+.devices__menus {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(39, 55, 75, 0.9);
+  z-index: 8; }
+
+.devices__menus--close {
+  width: 40px;
+  float: right;
+  margin: 5%; }
+
+.devices__menus--fdcm {
+  display: none; }
+
+.devices__menus--fdl {
+  display: none; }
+
+.devices__menus--hwa {
+  display: none; }
+
+.devices__menus--hwc {
+  display: none; }
+
+.devices__menus--hws {
+  display: none; }
+
+.devices__menus--gs {
+  display: none; }
+
+.rooms {
+  margin: 50px 0 0 5%;
+  height: 200px; }
+
+.rooms__titles {
+  display: flex;
+  width: 95vw;
+  justify-content: space-between; }
+
+.rooms__titles--view {
+  margin-right: 5%;
+  color: #fe8c26; }
+
+.rooms__carousel {
+  height: 25vh;
+  width: 85%;
+  margin: 5%; }
+
+.rooms__carousel--item {
+  background-color: #374b69;
+  width: 20vh !important;
+  height: 20vh !important; }
 
 h1 {
   font-family: Comfortaa;
@@ -142,6 +194,16 @@ h3 {
 .contain {
   width: 100vw;
   height: 100vh;
-  background-color: #27374b; }
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 /*# sourceMappingURL=style.css.map */

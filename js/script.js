@@ -1,12 +1,62 @@
 $(document).ready(function(){
+//BURGER MENU TOGGLE
   $('#burger').click(function(){
     $('.burgerMenu').fadeToggle(200);
   });
-
-  $('#close').click(function(){
+  $('#burgerClose').click(function(){
     $('.burgerMenu').fadeToggle(200);
   });
 
+//DEVICE BUTTON TOGGLE
+
+  $('#fdcm').click(function(){
+    $('.devices__menus, .devices__menus--fdcm').fadeToggle(200);
+  });
+  $('#fdcmClose').click(function(){
+    $('.devices__menus, .devices__menus--fdcm').fadeToggle(200);
+  });
+
+
+  $('#fdl').click(function(){
+    $('.devices__menus, .devices__menus--fdl').fadeToggle(200);
+  });
+  $('#fdlClose').click(function(){
+    $('.devices__menus, .devices__menus--fdl').fadeToggle(200);
+  });
+
+
+  $('#hwa').click(function(){
+    $('.devices__menus, .devices__menus--hwa').fadeToggle(200);
+  });
+  $('#hwaClose').click(function(){
+    $('.devices__menus, .devices__menus--hwa').fadeToggle(200);
+  });
+
+
+  $('#hwc').click(function(){
+    $('.devices__menus, .devices__menus--hwc').fadeToggle(200);
+  });
+  $('#hwcClose').click(function(){
+    $('.devices__menus, .devices__menus--hwc').fadeToggle(200);
+  });
+
+
+  $('#hws').click(function(){
+    $('.devices__menus, .devices__menus--hws').fadeToggle(200);
+  });
+  $('#hwsClose').click(function(){
+    $('.devices__menus, .devices__menus--hws').fadeToggle(200);
+  });
+
+
+  $('#gs').click(function(){
+    $('.devices__menus, .devices__menus--gs').fadeToggle(200);
+  });
+  $('#gsClose').click(function(){
+    $('.devices__menus, .devices__menus--gs').fadeToggle(200);
+  });
+
+// CAROUSEL SLICK
   $(".rooms__carousel").slick({
     dots: true,
     infinite: true,
