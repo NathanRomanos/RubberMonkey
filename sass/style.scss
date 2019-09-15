@@ -1,0 +1,34 @@
+// PARTIALS
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'topNav';
+@import 'bottomNav';
+@import 'menu';
+@import 'carousels';
+
+
+
+// FONTS
+
+h1{
+  font-family: Comfortaa;
+  font-size: 1.8rem;
+  color: $color5;
+}
+
+h2{
+  font-family: Comfortaa;
+  font-size: 1.2rem;
+  color: $color4;
+}
+
+h3{
+  color: $color4;
+}
+
+.contain{
+  width: 100vw;
+  height: 100vh;
+  background-color: $color1;
+}

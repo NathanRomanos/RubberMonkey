@@ -1,0 +1,30 @@
+.topNav{
+  width: 100vw;
+  padding: 5%;
+}
+
+.topNav__title{
+  float: left;
+}
+
+.topNav__bell{
+  float: right;
+  img{
+    width: 35px;
+  }
+}
+
+.topNav__burger{
+  float: right;
+  margin-left: 10%;
+  img{
+    width: 40px;
+  }
+}
+
+
+// HOVER EFFECTS
+
+.topNav__title:hover, .topNav__bell:hover, .topNav__burger:hover{
+  cursor: pointer;
+}

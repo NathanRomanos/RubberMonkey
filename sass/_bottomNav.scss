@@ -1,0 +1,25 @@
+nav{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  // height: 65px;
+  background-color: $color2;
+}
+
+
+.bottomNav__home{
+  float: left;
+  height: 50px;
+  margin: 10px;
+}
+
+.bottomNav__scroll{
+  float: right;
+  height: 60px;
+  width: 120px;
+  margin-right: 50px;
+  img{
+    height: 50px;
+    margin-top: 10px;
+  }
+}

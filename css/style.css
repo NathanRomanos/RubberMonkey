@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+  scroll-behavior: smooth; }
+
+.topNav {
+  width: 100vw;
+  padding: 5%; }
+
+.topNav__title {
+  float: left; }
+
+.topNav__bell {
+  float: right; }
+  .topNav__bell img {
+    width: 35px; }
+
+.topNav__burger {
+  float: right;
+  margin-left: 10%; }
+  .topNav__burger img {
+    width: 40px; }
+
+.topNav__title:hover, .topNav__bell:hover, .topNav__burger:hover {
+  cursor: pointer; }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #374b69; }
+
+.bottomNav__home {
+  float: left;
+  height: 50px;
+  margin: 10px; }
+
+.bottomNav__scroll {
+  float: right;
+  height: 60px;
+  width: 120px;
+  margin-right: 50px; }
+  .bottomNav__scroll img {
+    height: 50px;
+    margin-top: 10px; }
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(39, 55, 75, 0.9);
+  padding: 5%;
+  z-index: 5; }
+
+.burgerMenu__close {
+  width: 40px;
+  float: right; }
+
+.burgerMenu__profile {
+  float: left;
+  display: flex;
+  width: 75%; }
+  .burgerMenu__profile img {
+    width: 80px;
+    padding-right: 10px; }
+  .burgerMenu__profile h3 {
+    display: inline;
+    padding-top: 20px; }
+
+.burgerMenu__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .burgerMenu__list ul {
+    text-align: center; }
+    .burgerMenu__list ul li {
+      font-family: Comfortaa;
+      color: #ffffff;
+      padding: 20px; }
+
+.rooms {
+  margin: 50px 0 0 5%;
+  height: 200px; }
+
+.devices {
+  margin: 50px 0 0 5%;
+  height: 200px; }
+
+.rooms__titles, .devices__titles {
+  display: flex;
+  width: 95vw;
+  justify-content: space-between; }
+
+.rooms__titles--view, .devices__titles--view {
+  margin-right: 5%;
+  color: #fe8c26; }
+
+.rooms__carousel, .devices__carousel {
+  height: 25vh;
+  width: 85%;
+  margin: 5%; }
+
+.rooms__carousel--item, .devices__carousel--item {
+  background-color: #374b69;
+  width: 20vh !important;
+  height: 20vh !important; }
+
+.devices__carousel--item img {
+  height: 50%;
+  margin: 5px auto; }
+.devices__carousel--item h3 {
+  font-family: monospace;
+  margin: 5px;
+  position: absolute;
+  bottom: 0; }
+
+h1 {
+  font-family: Comfortaa;
+  font-size: 1.8rem;
+  color: #ffffff; }
+
+h2 {
+  font-family: Comfortaa;
+  font-size: 1.2rem;
+  color: #c4ccde; }
+
+h3 {
+  color: #c4ccde; }
+
+.contain {
+  width: 100vw;
+  height: 100vh;
+  background-color: #27374b; }
+
+/*# sourceMappingURL=style.css.map */

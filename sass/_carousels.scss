@@ -1,0 +1,45 @@
+.rooms{
+  margin: 50px 0 0 5%;
+  height: 200px;
+}
+
+.devices{
+  margin: 50px 0 0 5%;
+  height: 200px;
+}
+
+.rooms__titles, .devices__titles{
+  display: flex;
+  width: 95vw;
+  justify-content: space-between;
+}
+
+.rooms__titles--view, .devices__titles--view{
+  margin-right: 5%;
+  color: $color3;
+}
+
+.rooms__carousel, .devices__carousel{
+  height: 25vh;
+  width: 85%;
+  margin: 5%;
+}
+
+.rooms__carousel--item, .devices__carousel--item{
+  background-color: $color2;
+  width: 20vh !important;
+  height: 20vh !important;
+}
+
+.devices__carousel--item{
+  img{
+    height: 50%;
+    margin: 5px auto;
+  }
+  h3{
+    font-family: monospace;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+  }
+}

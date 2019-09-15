@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rubber Monkey Security</title>
+  <meta name="author" content="Nathan Romanos">
+  <meta name="description" content="Rubber Monkey Security">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="slick/slick.css" type="text/css">
+  <link rel="stylesheet" href="slick/slick-theme.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <style type="text/css">
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      /* width: 100%; */
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #fe8c26;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    .slick-dots li button:before{
+      color: white;
+    }
+
+    .slick-dots li.slick-active button:before{
+      color: #fe8c26;
+    }
+  </style>
+  </head>
+  <body>
+
+    <div class="contain">
+
+<!-- TOP NAV BAR -->
+      <div class="topNav">
+
+        <div class="topNav__title">
+          <h1>Home</h1>
+        </div>
+
+        <div class="topNav__burger">
+          <img id="burger" src="images/icons/burger.png" alt="settings menu button">
+        </div>
+
+        <div class="topNav__bell">
+          <img id="bell" src="images/icons/bell-w.png" alt="notifications button">
+        </div>
+
+      </div>
+
+
+<!-- BURGER MENU -->
+      <div class="burgerMenu">
+
+        <img id="close" class="burgerMenu__close" src="images/icons/cross.png" alt="menu close button">
+
+        <div class="burgerMenu__profile">
+
+          <img src="images/pfp-change.png" alt="profile picture">
+
+          <h3>Julian Hitchchild</h3>
+
+        </div>
+
+        <div class="burgerMenu__list">
+          <ul>
+            <li>Settings</li>
+            <li>Add</li>
+            <li>Rooms</li>
+            <li>Devices</li>
+            <li>Help</li>
+            <li>Log Out</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+<!-- ROOMS CAROUSEL -->
+      <section class="rooms">
+
+        <div class="rooms__titles">
+          <h2 class="rooms__titles--rooms">Rooms</h2>
+          <h4 class="rooms__titles--view">view all</h4>
+        </div>
+
+        <div class="rooms__carousel">
+          <div class="rooms__carousel--item">bruh</div>
+          <div class="rooms__carousel--item">bruh</div>
+          <div class="rooms__carousel--item">bruh</div>
+        </div>
+
+      </section>
+
+
+<!-- DEVICES CAROUSEL -->
+      <section class="devices">
+
+        <div class="devices__titles">
+          <h2 class="devices__titles--devices">Devices</h2>
+          <h4 class="devices__titles--view">view all</h4>
+        </div>
+
+        <div class="devices__carousel">
+          <div class="devices__carousel--item">
+            <img src="images/icons/camera-o.png" alt="Active camera icon">
+            <h3>Front Door<br>Camera-main</h3>
+          </div>
+
+          <div class="devices__carousel--item">
+            <img src="images/icons/lock-b.png" alt="inactive lock icon">
+            <h3>Front Door<br>Lock</h3>
+          </div>
+
+          <div class="devices__carousel--item">
+            <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
+            <h3>Hallway<br>Alarm</h3>
+          </div>
+
+          <div class="devices__carousel--item">
+            <img src="images/icons/camera-b.png" alt="Inactive camera icon">
+            <h3>Hallway<br>Camera</h3>
+          </div>
+
+          <div class="devices__carousel--item">
+            <img src="images/icons/sensor-b.png" alt="Inactive alarm icon">
+            <h3>Hallway<br>sensor</h3>
+          </div>
+
+          <div class="devices__carousel--item">
+            <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
+            <h3>Garage<br>sensor</h3>
+          </div>
+        </div>
+
+      </section>
+
+
+<!-- BOTTOM NAV BAR -->
+      <nav class="bottomNav">
+
+        <a href="home.html"><img class="bottomNav__home" src="images/icons/home-w.png" alt=""></a>
+
+        <div class="bottomNav__scroll">
+          <div class=""><img src="images/icons/camera-w.png" alt=""></div>
+          <div class=""><img src="images/icons/lock-w.png" alt=""></div>
+          <div class=""><img src="images/icons/shield-w.png" alt=""></div>
+          <div class=""><img src="images/icons/sensor-w.png" alt=""></div>
+        </div>
+
+      </nav>
+
+    </div>
+
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>
