@@ -54,7 +54,7 @@ nav {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(39, 55, 75, 0.9);
+  background-color: rgba(39, 55, 75, 0.95);
   padding: 5%;
   z-index: 10; }
 
@@ -122,38 +122,62 @@ nav {
   position: absolute;
   bottom: 0; }
 
-.devices__menus {
+.devices-menus {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(39, 55, 75, 0.9);
+  background-color: rgba(39, 55, 75, 0.92);
   z-index: 8; }
 
-.devices__menus--close {
+.devices-menu__heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw; }
+
+.devices-menus__title {
+  margin: 5%;
+  width: 60%;
+  color: #ffffff;
+  font-size: 1.6rem; }
+
+.devices-menus__close {
   width: 40px;
-  float: right;
+  height: 40px;
   margin: 5%; }
 
-.devices__menus--fdcm {
+.devices-menus__fdcm {
   display: none; }
 
-.devices__menus--fdl {
+.devices-menus__fdl {
   display: none; }
 
-.devices__menus--hwa {
+.devices-menus__hwa {
   display: none; }
 
-.devices__menus--hwc {
+.devices-menus__hwc {
   display: none; }
 
-.devices__menus--hws {
+.devices-menus__hws {
   display: none; }
 
-.devices__menus--gs {
+.devices-menus__gs {
   display: none; }
+
+.devices-menu__content {
+  display: grid;
+  width: 100%;
+  height: 90vh;
+  grid-template-columns: 100vw;
+  justify-items: center;
+  align-content: space-around; }
+  .devices-menu__content img {
+    height: 80px; }
+  .devices-menu__content h2 {
+    margin-top: 5%;
+    text-align: center; }
 
 .rooms {
   margin: 50px 0 0 5%;
