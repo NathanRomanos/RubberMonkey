@@ -5,10 +5,58 @@ $(document).ready(function(){
   });
   $('#burgerClose').click(function(){
     $('.burgerMenu').fadeToggle(200);
+    $('.burger-menu__list--hidden').hide(200);
   });
 
-//DEVICE BUTTON TOGGLE
 
+// MENU ADD FUNCTIONS
+  $('#add').click(function(){
+    $('.burger-menu__list--hidden').toggle(200);
+  });
+
+
+  $('#add-d').click(function(){
+    $('.add-d-contain').fadeToggle(200);
+    $('.contain').fadeToggle(200);
+    $('.burger-menu__list--hidden').fadeToggle(200);
+  });
+  $('#add-d-close').click(function(){
+    $('.add-d-contain').fadeToggle(200);
+    $('.contain').fadeToggle(200);
+    $('.burgerMenu').hide();
+  });
+
+
+//MENU SETTINGS FUNCTIONS
+  $('#settings').click(function(){
+    $('.settings-contain').fadeToggle(200);
+    $('.contain').fadeToggle(200);
+    $('.burger-menu__list--hidden').hide(200);
+  });
+  $('#settings-close').click(function(){
+    $('.settings-contain').fadeToggle(200);
+    $('.contain').fadeToggle(200);
+    $('.burgerMenu').hide();
+  });
+
+
+
+// ROOMS VIEW ALL FUNCTIONS
+  $('.rooms__titles--view-all').click(function(){
+    $('.rooms__hidden').toggle(200);
+    $('.rooms__carousel').toggle(200);
+  });
+
+
+
+// DEVICES VIEW ALL FUNCTIONS
+    $('.devices__titles--view-all').click(function(){
+      $('.devices__hidden').toggle(200);
+      $('.devices__carousel').toggle(200);
+    });
+
+
+//DEVICE BUTTON TOGGLE
   $('#fdcm').click(function(){
     $('.devices-menus, .devices-menus__fdcm').fadeToggle(200);
   });

@@ -14,6 +14,10 @@
   }
 }
 
+.topNav__bell:active{
+  transform: scale(0.9);
+}
+
 .topNav__burger{
   float: right;
   margin-left: 10%;
@@ -22,9 +26,6 @@
   }
 }
 
-
-// HOVER EFFECTS
-
-.topNav__title:hover, .topNav__bell:hover, .topNav__burger:hover{
-  cursor: pointer;
+.topNav__burger:active{
+  transform: scale(0.9);
 }

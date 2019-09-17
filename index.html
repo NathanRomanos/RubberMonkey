@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="slick/slick.css" type="text/css">
   <link rel="stylesheet" href="slick/slick-theme.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans&display=swap" rel="stylesheet">
   <style type="text/css">
 
     .slider {
@@ -89,12 +89,14 @@
 
         </div>
 
-        <div class="burgerMenu__list">
+        <div class="burger-menu__list">
           <ul>
-            <li>Settings</li>
-            <li>Add</li>
-            <li>Rooms</li>
-            <li>Devices</li>
+            <li id="settings">Settings</li>
+            <li id="add">Add</li>
+            <li id="add-r" class="burger-menu__list--hidden">Add Room</li>
+            <li id="add-d" class="burger-menu__list--hidden">Add Device</li>
+            <li>Manage Rooms</li>
+            <li>Manage Devices</li>
             <li>Help</li>
             <li>Log Out</li>
           </ul>
@@ -108,13 +110,22 @@
 
         <div class="rooms__titles">
           <h2 class="rooms__titles--rooms">Rooms</h2>
-          <h4 class="rooms__titles--view">view all</h4>
+          <h4 class="rooms__titles--view-all">view all</h4>
+          <h4 class="rooms__titles--view-less">view less</h4>
         </div>
 
         <div class="rooms__carousel">
           <div class="rooms__carousel--item">Front Door</div>
           <div class="rooms__carousel--item">Hallway</div>
           <div class="rooms__carousel--item">Garage</div>
+        </div>
+
+        <div class="rooms__hidden">
+          <div class="rooms__view-all">
+            <div class="rooms__view-all--item">Front Door</div>
+            <div class="rooms__view-all--item">Hallway</div>
+            <div class="rooms__view-all--item">Garage</div>
+          </div>
         </div>
 
       </section>
@@ -125,9 +136,11 @@
 
         <div class="devices__titles">
           <h2 class="devices__titles--devices">Devices</h2>
-          <h4 class="devices__titles--view">view all</h4>
+          <h4 class="devices__titles--view-all">view all</h4>
+          <h4 class="devices__titles--view-less">view less</h4>
         </div>
 
+<!-- DEVICES CAROUSEL -->
         <div class="devices__carousel">
           <div id="fdcm" class="devices__carousel--item">
             <img src="images/icons/camera-o.png" alt="Active camera icon">
@@ -161,16 +174,51 @@
         </div>
 
 
+<!-- DEVICES VIEW ALL -->
+        <div class="devices__hidden">
+          <div class="devices__view-all">
+            <div id="fdcm" class="devices__view-all--item">
+              <img src="images/icons/camera-o.png" alt="Active camera icon">
+              <h3>Front Door<br>Camera-main</h3>
+            </div>
+
+            <div id="fdl" class="devices__view-all--item">
+              <img src="images/icons/lock-b.png" alt="inactive lock icon">
+              <h3>Front Door<br>Lock</h3>
+            </div>
+
+            <div id="hwa" class="devices__view-all--item">
+              <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
+              <h3>Hallway<br>Alarm</h3>
+            </div>
+
+            <div id="hwc" class="devices__view-all--item">
+              <img src="images/icons/camera-b.png" alt="Inactive camera icon">
+              <h3>Hallway<br>Camera</h3>
+            </div>
+
+            <div id="hws" class="devices__view-all--item">
+              <img src="images/icons/sensor-b.png" alt="Inactive alarm icon">
+              <h3>Hallway<br>sensor</h3>
+            </div>
+
+            <div id="gs" class="devices__view-all--item">
+              <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
+              <h3>Garage<br>sensor</h3>
+            </div>
+          </div>
+      </div>
+
+
 <!-- DEVICE ITEM MENUS -->
         <div class="devices-menus">
 
 <!-- FRONT DOOR CAMERA MAIN -->
           <div class="devices-menus__fdcm">
 
-            <div class="devices-menu__heading">
-              <h2 class="devices-menus__title">Front Door<br>Camera-main</h2>
-
-              <img id="fdcmClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
+            <div class="section-heading"> <!-- this contains reusable code so that all different heading sections of this interface have the same structure -->
+              <h1 class="section-heading__title">Front Door<br>Camera-main</h1>
+              <img id="fdcmClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
             </div>
 
             <div class="devices-menu__content">
@@ -218,7 +266,7 @@
 <!-- BOTTOM NAV BAR -->
       <nav class="bottomNav">
 
-        <a href="home.html"><img class="bottomNav__home" src="images/icons/home-w.png" alt=""></a>
+        <a href="index.html"><img class="bottomNav__home" src="images/icons/home-w.png" alt=""></a>
 
         <div class="bottomNav__scroll">
           <div class=""><img src="images/icons/camera-w.png" alt=""></div>
@@ -229,7 +277,32 @@
 
       </nav>
 
-    </div>
+    </div> <!-- CONTAIN DIV ENDS HERE -->
+
+
+
+<!-- ADD DEVICES SECTION -->
+    <div class="add-d-contain">
+
+      <div class="section-heading">
+        <h1 class="section-heading__title">Add Device</h1>
+
+        <img id="add-d-close" class="section-heading__close" src="images/icons/cross.png" alt="add device menu close button">
+      </div>
+
+    </div> <!-- ADD DEVICE CONTAIN DIV ENDS HERE -->
+
+
+<!-- SETTINGS SECTION -->
+    <div class="settings-contain">
+
+      <div class="section-heading">
+        <h1 class="section-heading__title">Secure Monkey settings</h1>
+
+        <img id="settings-close" class="section-heading__close" src="images/icons/cross.png" alt="settings menu close button">
+      </div>
+
+    </div> <!-- SETTINGS CONTAIN DIV ENDS HERE -->
 
 
 

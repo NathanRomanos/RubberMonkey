@@ -13,6 +13,10 @@ nav{
   margin: 10px;
 }
 
+.bottomNav__home:active{
+  transform: scale(0.9);
+}
+
 .bottomNav__scroll{
   float: right;
   height: 60px;
@@ -21,5 +25,9 @@ nav{
   img{
     height: 50px;
     margin-top: 10px;
+  }
+
+  img:active{
+    transform: scale(0.9);
   }
 }

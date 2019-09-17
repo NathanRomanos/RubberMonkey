@@ -1,6 +1,6 @@
 .rooms{
+  display: block;
   margin: 50px 0 0 5%;
-  height: 200px;
 }
 
 .rooms__titles{
@@ -9,11 +9,25 @@
   justify-content: space-between;
 }
 
-.rooms__titles--view{
+.rooms__titles--view-all{
+  display: block;
   margin-right: 5%;
   color: $color3;
 }
 
+.rooms__titles--view-less{
+  display: none;
+  margin-right: 5%;
+  color: $color3;
+}
+
+
+.rooms__titles--view-all:active, .rooms__titles--view-less:active{
+  transform: scale(0.9);
+}
+
+
+// CAROUSEL SETTINGS
 .rooms__carousel{
   height: 25vh;
   width: 85%;
@@ -24,4 +38,31 @@
   background-color: $color2;
   width: 20vh !important;
   height: 20vh !important;
+}
+
+.rooms__carousel--item:active{
+  transform: scale(0.9);
+}
+
+
+// VIEW ALL Settings
+.rooms__hidden{
+  display: none;
+}
+
+.rooms__view-all{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-right: 5%;
+}
+
+.rooms__view-all--item{
+  background-color: $color2;
+  width: 35vw;
+  height: 35vw;
+  margin: 5vw;
+}
+
+.rooms__view-all--item:active{
+  transform: scale(0.9);
 }

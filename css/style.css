@@ -18,14 +18,17 @@
   .topNav__bell img {
     width: 35px; }
 
+.topNav__bell:active {
+  transform: scale(0.9); }
+
 .topNav__burger {
   float: right;
   margin-left: 10%; }
   .topNav__burger img {
     width: 40px; }
 
-.topNav__title:hover, .topNav__bell:hover, .topNav__burger:hover {
-  cursor: pointer; }
+.topNav__burger:active {
+  transform: scale(0.9); }
 
 nav {
   position: fixed;
@@ -38,6 +41,9 @@ nav {
   height: 50px;
   margin: 10px; }
 
+.bottomNav__home:active {
+  transform: scale(0.9); }
+
 .bottomNav__scroll {
   float: right;
   height: 60px;
@@ -46,6 +52,8 @@ nav {
   .bottomNav__scroll img {
     height: 50px;
     margin-top: 10px; }
+  .bottomNav__scroll img:active {
+    transform: scale(0.9); }
 
 .burgerMenu {
   display: none;
@@ -62,6 +70,9 @@ nav {
   width: 40px;
   float: right; }
 
+.burgerMenu__close:active {
+  transform: scale(0.9); }
+
 .burgerMenu__profile {
   float: left;
   display: flex;
@@ -69,11 +80,13 @@ nav {
   .burgerMenu__profile img {
     width: 80px;
     padding-right: 10px; }
+  .burgerMenu__profile img:active {
+    transform: scale(0.9); }
   .burgerMenu__profile h3 {
     display: inline;
     padding-top: 20px; }
 
-.burgerMenu__list {
+.burger-menu__list {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,25 +96,42 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .burgerMenu__list ul {
-    text-align: center; }
-    .burgerMenu__list ul li {
-      font-family: Comfortaa;
+  .burger-menu__list ul {
+    text-align: center;
+    pointer-events: auto; }
+    .burger-menu__list ul li {
+      font-family: 'Open Sans', sans-serif;
       color: #ffffff;
-      padding: 20px; }
+      padding: 15px; }
+    .burger-menu__list ul li:active {
+      transform: scale(0.9); }
+
+.burger-menu__list--hidden {
+  display: none;
+  font-size: 0.8rem;
+  background-color: #374b69; }
 
 .devices {
-  margin: 50px 0 0 5%;
-  height: 200px; }
+  display: block;
+  margin: 50px 0 0 5%; }
 
 .devices__titles {
   display: flex;
   width: 95vw;
   justify-content: space-between; }
 
-.devices__titles--view {
+.devices__titles--view-all {
+  display: block;
   margin-right: 5%;
   color: #fe8c26; }
+
+.devices__titles--view-less {
+  display: none;
+  margin-right: 5%;
+  color: #fe8c26; }
+
+.devices__titles--view:active {
+  transform: scale(0.9); }
 
 .devices__carousel {
   height: 25vh;
@@ -109,18 +139,48 @@ nav {
   margin: 5%; }
 
 .devices__carousel--item {
-  background-color: #374b69;
+  background-color: #c4ccde;
   width: 20vh !important;
   height: 20vh !important; }
+  .devices__carousel--item img {
+    height: 50%;
+    margin: 5px auto; }
+  .devices__carousel--item h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    color: #27374b; }
 
-.devices__carousel--item img {
-  height: 50%;
-  margin: 5px auto; }
-.devices__carousel--item h3 {
-  font-family: monospace;
-  margin: 5px;
-  position: absolute;
-  bottom: 0; }
+.devices__carousel--item:active {
+  transform: scale(0.9); }
+
+.devices__hidden {
+  display: none; }
+
+.devices__view-all {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-right: 5%; }
+
+.devices__view-all--item {
+  background-color: #c4ccde;
+  width: 35vw;
+  height: 35vw;
+  margin: 5vw;
+  position: relative; }
+  .devices__view-all--item img {
+    height: 50%;
+    margin: 5px auto; }
+  .devices__view-all--item h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    color: #27374b; }
+
+.devices__view-all--item:active {
+  transform: scale(0.9); }
 
 .devices-menus {
   display: none;
@@ -131,22 +191,6 @@ nav {
   height: 100vh;
   background-color: rgba(39, 55, 75, 0.92);
   z-index: 8; }
-
-.devices-menu__heading {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw; }
-
-.devices-menus__title {
-  margin: 5%;
-  width: 60%;
-  color: #ffffff;
-  font-size: 1.6rem; }
-
-.devices-menus__close {
-  width: 40px;
-  height: 40px;
-  margin: 5%; }
 
 .devices-menus__fdcm {
   display: none; }
@@ -177,20 +221,30 @@ nav {
     height: 80px; }
   .devices-menu__content h2 {
     margin-top: 5%;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Open Sans', sans-serif; }
 
 .rooms {
-  margin: 50px 0 0 5%;
-  height: 200px; }
+  display: block;
+  margin: 50px 0 0 5%; }
 
 .rooms__titles {
   display: flex;
   width: 95vw;
   justify-content: space-between; }
 
-.rooms__titles--view {
+.rooms__titles--view-all {
+  display: block;
   margin-right: 5%;
   color: #fe8c26; }
+
+.rooms__titles--view-less {
+  display: none;
+  margin-right: 5%;
+  color: #fe8c26; }
+
+.rooms__titles--view-all:active, .rooms__titles--view-less:active {
+  transform: scale(0.9); }
 
 .rooms__carousel {
   height: 25vh;
@@ -202,18 +256,57 @@ nav {
   width: 20vh !important;
   height: 20vh !important; }
 
+.rooms__carousel--item:active {
+  transform: scale(0.9); }
+
+.rooms__hidden {
+  display: none; }
+
+.rooms__view-all {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-right: 5%; }
+
+.rooms__view-all--item {
+  background-color: #374b69;
+  width: 35vw;
+  height: 35vw;
+  margin: 5vw; }
+
+.rooms__view-all--item:active {
+  transform: scale(0.9); }
+
+.add-d-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #27374b; }
+
+.settings-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #27374b; }
+
+body {
+  background-color: #374b69; }
+
 h1 {
-  font-family: Comfortaa;
-  font-size: 1.8rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.6rem;
   color: #ffffff; }
 
 h2 {
-  font-family: Comfortaa;
+  font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
   color: #c4ccde; }
 
 h3 {
-  color: #c4ccde; }
+  color: #c4ccde;
+  font-family: 'Open Sans', sans-serif; }
+
+h4 {
+  font-family: 'Open Sans', sans-serif; }
 
 .contain {
   width: 100vw;
@@ -229,5 +322,22 @@ h3 {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw; }
+
+.section-heading__title {
+  margin: 5%;
+  width: 60%; }
+
+.section-heading__close {
+  width: 40px;
+  height: 40px;
+  margin: 5%; }
+
+.section-heading__close:active {
+  transform: scale(0.9); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 .devices{
+  display: block;
   margin: 50px 0 0 5%;
-  height: 200px;
 }
 
 .devices__titles{
@@ -9,11 +9,24 @@
   justify-content: space-between;
 }
 
-.devices__titles--view{
+.devices__titles--view-all{
+  display: block;
   margin-right: 5%;
   color: $color3;
 }
 
+.devices__titles--view-less{
+  display: none;
+  margin-right: 5%;
+  color: $color3;
+}
+
+.devices__titles--view:active{
+  transform: scale(0.9);
+}
+
+
+// CAROUSEL SETTINGS
 .devices__carousel{
   height: 25vh;
   width: 85%;
@@ -21,22 +34,59 @@
 }
 
 .devices__carousel--item{
-  background-color: $color2;
+  background-color: $color4;
   width: 20vh !important;
   height: 20vh !important;
-}
-
-.devices__carousel--item{
   img{
     height: 50%;
     margin: 5px auto;
   }
   h3{
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     margin: 5px;
     position: absolute;
     bottom: 0;
+    color: $color1;
   }
+}
+
+.devices__carousel--item:active{
+  transform: scale(0.9);
+}
+
+
+// VIEW ALL Settings
+.devices__hidden{
+  display: none;
+}
+
+.devices__view-all{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-right: 5%;
+}
+
+.devices__view-all--item{
+  background-color: $color4;
+  width: 35vw;
+  height: 35vw;
+  margin: 5vw;
+  position: relative;
+  img{
+    height: 50%;
+    margin: 5px auto;
+  }
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    color: $color1;
+  }
+}
+
+.devices__view-all--item:active{
+  transform: scale(0.9);
 }
 
 
@@ -52,26 +102,6 @@
   z-index: 8;
 }
 
-
-// DEVICE MENU HEADING
-.devices-menu__heading{
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-}
-
-.devices-menus__title{
-  margin: 5%;
-  width: 60%;
-  color: $color5;
-  font-size: 1.6rem;
-}
-
-.devices-menus__close{
-  width: 40px;
-  height: 40px;
-  margin: 5%;
-}
 
 
 // INDIVIDUAL DEVICES MENUS
@@ -115,5 +145,6 @@
   h2{
     margin-top: 5%;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
   }
 }

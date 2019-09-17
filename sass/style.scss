@@ -7,31 +7,43 @@
 @import 'menu';
 @import 'devices';
 @import 'rooms';
+@import 'add-d';
+@import 'settings';
 
+
+body{
+  background-color: $color2;
+}
 
 
 // FONTS
 
 h1{
-  font-family: Comfortaa;
-  font-size: 1.8rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.6rem;
   color: $color5;
 }
 
 h2{
-  font-family: Comfortaa;
+  font-family: 'Comfortaa', cursive;
   font-size: 1.2rem;
   color: $color4;
 }
 
 h3{
   color: $color4;
+  font-family: 'Open Sans', sans-serif;
 }
 
+h4{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+// CONNTENT CONTAINER for home page
 .contain{
   width: 100vw;
   height: 100vh;
-  // background-color: $color1;
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
   background: #151828; /* Old browsers */
@@ -39,5 +51,27 @@ h3{
   background: -webkit-linear-gradient(-45deg,  #151828 0%,#27374b 50%,#374b69 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg,  #151828 0%,#27374b 50%,#374b69 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
+
+// SECTION HEADINGS this contains reusable code so that all different heading sections of this interface have the same structure
+.section-heading{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.section-heading__title{
+  margin: 5%;
+  width: 60%;
+}
+
+.section-heading__close{
+  width: 40px;
+  height: 40px;
+  margin: 5%;
+}
+
+.section-heading__close:active{
+  transform: scale(0.9);
 }
