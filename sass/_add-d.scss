@@ -4,3 +4,49 @@
   height: 100vh;
   background-color: $color1;
 }
+
+.add-d-grid{
+  margin-top: 5vh;
+  height: 70vh;
+  display: grid;
+  align-content: space-evenly;
+  grid-template-rows: 10vh 10vh 10vh 1vh 10vh 1vh 10vh 1vh 10vh;
+  background-color: $color2;
+}
+
+.add-d-grid__item{
+  align-self: center;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  h3{
+    display: inline;
+    margin-left: 5%;
+    font-size: 1.2rem;
+  }
+  hr{
+    border-color: $color1;
+    width: 95%;
+    margin-right: 5%;
+  }
+  img{
+    height: 30px;
+    display: inline;
+  }
+}
+
+.add-d-grid__item:active{
+  h3{
+    transform: scale(0.9);
+  }
+  img{
+    transform: scale(0.9);
+  }
+}
+
+.add-d-grid__item--header{
+  align-self: end;
+  padding-top: 7vh;
+  background-color: $color1;
+  padding-left: 5%;
+}

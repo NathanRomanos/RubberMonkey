@@ -66,11 +66,11 @@
         </div>
 
         <div class="topNav__burger">
-          <img id="burger" src="images/icons/burger.png" alt="settings menu button">
+          <img class="burger" src="images/icons/burger.png" alt="settings menu button">
         </div>
 
         <div class="topNav__bell">
-          <img id="bell" src="images/icons/bell-w.png" alt="notifications button">
+          <img class="bell" src="images/icons/bell-w.png" alt="notifications button">
         </div>
 
       </div>
@@ -79,7 +79,7 @@
 <!-- BURGER MENU -->
       <div class="burgerMenu">
 
-        <img id="burgerClose" class="burgerMenu__close" src="images/icons/cross.png" alt="menu close button">
+        <img class="burgerMenu__close burgerClose" src="images/icons/cross.png" alt="menu close button">
 
         <div class="burgerMenu__profile">
 
@@ -91,10 +91,10 @@
 
         <div class="burger-menu__list">
           <ul>
-            <li id="settings">Settings</li>
-            <li id="add">Add</li>
-            <li id="add-r" class="burger-menu__list--hidden">Add Room</li>
-            <li id="add-d" class="burger-menu__list--hidden">Add Device</li>
+            <li class="settings">Settings</li>
+            <li class="add">Add</li>
+            <li class="burger-menu__list--hidden add-r">Add Room</li>
+            <li class="burger-menu__list--hidden add-d">Add Device</li>
             <li>Manage Rooms</li>
             <li>Manage Devices</li>
             <li>Help</li>
@@ -229,7 +229,7 @@
 
               <div class="section-heading"> <!-- this contains reusable code so that all different heading sections of this interface have the same structure -->
                 <h1 class="section-heading__title">Front Door<br>Camera-A</h1>
-                <img id="fdcaClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+                <img class="section-heading__close fdcaClose" src="images/icons/cross.png" alt="menu close button">
               </div>
 
               <div class="devices-menu__content">
@@ -253,7 +253,7 @@
 
             <div class="section-heading">
               <h1 class="section-heading__title">Front Door<br>Camera-A</h1>
-              <img id="fdcbClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+              <img class="section-heading__close fdcbClose" src="images/icons/cross.png" alt="menu close button">
             </div>
 
             <div class="devices-menu__content">
@@ -276,7 +276,7 @@
           <div class="devices-menus__fdl">
             <div class="section-heading">
               <h1 class="section-heading__title">Front Door<br>Lock</h1>
-              <img id="fdlClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+              <img class="section-heading__close fdlClose" src="images/icons/cross.png" alt="menu close button">
             </div>
           </div>
 
@@ -284,23 +284,23 @@
           <div class="devices-menus__hwa">
             <div class="section-heading">
               <h1 class="section-heading__title">Hallway<br>Alarm</h1>
-              <img id="hwaClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+              <img class="section-heading__close hwaClose" src="images/icons/cross.png" alt="menu close button">
             </div>
           </div>
 
 <!-- HALLWAY CAMERA -->
           <div class="devices-menus__hwc">
-            <img id="hwcClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
+            <img class="devices-menus__close hwcClose" src="images/icons/cross.png" alt="menu close button">
           </div>
 
 <!-- HALLWAY SENSOR -->
           <div class="devices-menus__hws">
-            <img id="hwsClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
+            <img class="devices-menus__close hwsClose" src="images/icons/cross.png" alt="menu close button">
           </div>
 
 <!-- GARAGE SENSOR -->
           <div class="devices-menus__gs">
-            <img id="gsClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
+            <img class="devices-menus__close gsClose" src="images/icons/cross.png" alt="menu close button">
           </div>
 
         </div>
@@ -332,7 +332,44 @@
       <div class="section-heading">
         <h1 class="section-heading__title">Add Device</h1>
 
-        <img id="add-d-close" class="section-heading__close" src="images/icons/cross.png" alt="add device menu close button">
+        <img class="section-heading__close add-d-close" src="images/icons/cross.png" alt="add device menu close button">
+      </div>
+
+      <div class="add-d-grid">
+
+        <div class="add-d-grid__item">
+          <img src="images/icons/qr-scan.svg" alt="">
+          <h3>Scan</h3>
+        </div>
+
+        <div class="add-d-grid__item--header"> <h4>Add Product</h4> </div>
+
+        <div class="add-d-grid__item">
+          <img src="images/icons/camera-w.png" alt="">
+          <h3>Camera</h3>
+        </div>
+
+        <div class="add-d-grid__item"> <hr> </div>
+
+        <div class="add-d-grid__item">
+          <img src="images/icons/lock-w.png" alt="">
+          <h3>Lock</h3>
+        </div>
+
+        <div class="add-d-grid__item"> <hr style="color: blue"> </div>
+
+        <div class="add-d-grid__item">
+          <img src="images/icons/shield-w.png" alt="">
+          <h3>Alarm</h3>
+        </div>
+
+        <div class="add-d-grid__item"> <hr style="color: blue"> </div>
+
+        <div class="add-d-grid__item">
+          <img src="images/icons/sensor-w.png" alt="">
+          <h3>Sensor</h3>
+        </div>
+
       </div>
 
     </div> <!-- ADD DEVICE CONTAIN DIV ENDS HERE -->
@@ -344,7 +381,7 @@
       <div class="section-heading">
         <h1 class="section-heading__title">Secure Monkey settings</h1>
 
-        <img id="settings-close" class="section-heading__close" src="images/icons/cross.png" alt="settings menu close button">
+        <img class="section-heading__close settings-close" src="images/icons/cross.png" alt="settings menu close button">
       </div>
 
     </div> <!-- SETTINGS CONTAIN DIV ENDS HERE -->

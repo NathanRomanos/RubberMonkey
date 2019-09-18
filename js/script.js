@@ -1,26 +1,26 @@
 $(document).ready(function(){
 //BURGER MENU TOGGLE
-  $('#burger').click(function(){
+  $('.burger').click(function(){
     $('.burgerMenu').fadeToggle(200);
   });
-  $('#burgerClose').click(function(){
+  $('.burgerClose').click(function(){
     $('.burgerMenu').fadeToggle(200);
     $('.burger-menu__list--hidden').hide(200);
   });
 
 
 // MENU ADD FUNCTIONS
-  $('#add').click(function(){
+  $('.add').click(function(){
     $('.burger-menu__list--hidden').toggle(200);
   });
 
 
-  $('#add-d').click(function(){
+  $('.add-d').click(function(){
     $('.add-d-contain').fadeToggle(200);
     $('.contain').fadeToggle(200);
     $('.burger-menu__list--hidden').fadeToggle(200);
   });
-  $('#add-d-close').click(function(){
+  $('.add-d-close').click(function(){
     $('.add-d-contain').fadeToggle(200);
     $('.contain').fadeToggle(200);
     $('.burgerMenu').hide();
@@ -28,12 +28,12 @@ $(document).ready(function(){
 
 
 //MENU SETTINGS FUNCTIONS
-  $('#settings').click(function(){
+  $('.settings').click(function(){
     $('.settings-contain').fadeToggle(200);
     $('.contain').fadeToggle(200);
     $('.burger-menu__list--hidden').hide(200);
   });
-  $('#settings-close').click(function(){
+  $('.settings-close').click(function(){
     $('.settings-contain').fadeToggle(200);
     $('.contain').fadeToggle(200);
     $('.burgerMenu').hide();
@@ -61,7 +61,7 @@ $(document).ready(function(){
   $('.fdca').click(function(){
     $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
-  $('#fdcaClose').click(function(){
+  $('.fdcaClose').click(function(){
     $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
 
@@ -69,7 +69,7 @@ $(document).ready(function(){
   $('.fdcb').click(function(){
     $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
-  $('#fdcbClose').click(function(){
+  $('.fdcbClose').click(function(){
     $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
 
@@ -77,7 +77,7 @@ $(document).ready(function(){
   $('.fdl').click(function(){
     $('.devices-menus, .devices-menus__fdl').fadeToggle(200);
   });
-  $('#fdlClose').click(function(){
+  $('.fdlClose').click(function(){
     $('.devices-menus, .devices-menus__fdl').fadeToggle(200);
   });
 
@@ -85,7 +85,7 @@ $(document).ready(function(){
   $('.hwa').click(function(){
     $('.devices-menus, .devices-menus__hwa').fadeToggle(200);
   });
-  $('#hwaClose').click(function(){
+  $('.hwaClose').click(function(){
     $('.devices-menus, .devices-menus__hwa').fadeToggle(200);
   });
 
@@ -93,7 +93,7 @@ $(document).ready(function(){
   $('.hwc').click(function(){
     $('.devices-menus, .devices-menus__hwc').fadeToggle(200);
   });
-  $('#hwcClose').click(function(){
+  $('.hwcClose').click(function(){
     $('.devices-menus, .devices-menus__hwc').fadeToggle(200);
   });
 
@@ -101,7 +101,7 @@ $(document).ready(function(){
   $('.hws').click(function(){
     $('.devices-menus, .devices-menus__hws').fadeToggle(200);
   });
-  $('#hwsClose').click(function(){
+  $('.hwsClose').click(function(){
     $('.devices-menus, .devices-menus__hws').fadeToggle(200);
   });
 
@@ -109,7 +109,7 @@ $(document).ready(function(){
   $('.gs').click(function(){
     $('.devices-menus, .devices-menus__gs').fadeToggle(200);
   });
-  $('#gsClose').click(function(){
+  $('.gsClose').click(function(){
     $('.devices-menus, .devices-menus__gs').fadeToggle(200);
   });
 
