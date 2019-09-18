@@ -39,6 +39,19 @@
   transform: scale(0.9);
 }
 
+.rooms__hallway{
+  background-image: url('../images/hallway.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.rooms__garage{
+  background-image: url('../images/garage.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 // VIEW ALL Settings
 .rooms__hidden{
