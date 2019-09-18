@@ -42,30 +42,39 @@ $(document).ready(function(){
 
 
 // ROOMS VIEW ALL FUNCTIONS
-  $('.rooms__titles--view-all').click(function(){
-    $('.rooms__hidden').toggle(200);
-    $('.rooms__carousel').toggle(200);
+  $('.rooms__titles--view-all, .rooms__titles--view-less').click(function(){
+    $('.rooms__hidden, .rooms__carousel').toggle(200);
+    $('.rooms__titles--view-all, .rooms__titles--view-less').toggle();
   });
 
 
 
 // DEVICES VIEW ALL FUNCTIONS
-    $('.devices__titles--view-all').click(function(){
-      $('.devices__hidden').toggle(200);
-      $('.devices__carousel').toggle(200);
+    $('.devices__titles--view-all, .devices__titles--view-less').click(function(){
+      $('.devices__hidden, .devices__carousel').toggle(200);
+      $('.devices__titles--view-all, .devices__titles--view-less').toggle();
     });
 
 
+
 //DEVICE BUTTON TOGGLE
-  $('#fdcm').click(function(){
-    $('.devices-menus, .devices-menus__fdcm').fadeToggle(200);
+  $('.fdca').click(function(){
+    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
-  $('#fdcmClose').click(function(){
-    $('.devices-menus, .devices-menus__fdcm').fadeToggle(200);
+  $('#fdcaClose').click(function(){
+    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
   });
 
 
-  $('#fdl').click(function(){
+  $('.fdcb').click(function(){
+    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
+  });
+  $('#fdcbClose').click(function(){
+    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
+  });
+
+
+  $('.fdl').click(function(){
     $('.devices-menus, .devices-menus__fdl').fadeToggle(200);
   });
   $('#fdlClose').click(function(){
@@ -73,7 +82,7 @@ $(document).ready(function(){
   });
 
 
-  $('#hwa').click(function(){
+  $('.hwa').click(function(){
     $('.devices-menus, .devices-menus__hwa').fadeToggle(200);
   });
   $('#hwaClose').click(function(){
@@ -81,7 +90,7 @@ $(document).ready(function(){
   });
 
 
-  $('#hwc').click(function(){
+  $('.hwc').click(function(){
     $('.devices-menus, .devices-menus__hwc').fadeToggle(200);
   });
   $('#hwcClose').click(function(){
@@ -89,7 +98,7 @@ $(document).ready(function(){
   });
 
 
-  $('#hws').click(function(){
+  $('.hws').click(function(){
     $('.devices-menus, .devices-menus__hws').fadeToggle(200);
   });
   $('#hwsClose').click(function(){
@@ -97,7 +106,7 @@ $(document).ready(function(){
   });
 
 
-  $('#gs').click(function(){
+  $('.gs').click(function(){
     $('.devices-menus, .devices-menus__gs').fadeToggle(200);
   });
   $('#gsClose').click(function(){

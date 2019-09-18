@@ -106,122 +106,158 @@
 
 
 <!-- ROOMS -->
-      <section class="rooms">
+        <section class="rooms">
 
-        <div class="rooms__titles">
-          <h2 class="rooms__titles--rooms">Rooms</h2>
-          <h4 class="rooms__titles--view-all">view all</h4>
-          <h4 class="rooms__titles--view-less">view less</h4>
-        </div>
-
-        <div class="rooms__carousel">
-          <div class="rooms__carousel--item">Front Door</div>
-          <div class="rooms__carousel--item">Hallway</div>
-          <div class="rooms__carousel--item">Garage</div>
-        </div>
-
-        <div class="rooms__hidden">
-          <div class="rooms__view-all">
-            <div class="rooms__view-all--item">Front Door</div>
-            <div class="rooms__view-all--item">Hallway</div>
-            <div class="rooms__view-all--item">Garage</div>
-          </div>
-        </div>
-
-      </section>
-
-
-<!-- DEVICES -->
-      <section class="devices">
-
-        <div class="devices__titles">
-          <h2 class="devices__titles--devices">Devices</h2>
-          <h4 class="devices__titles--view-all">view all</h4>
-          <h4 class="devices__titles--view-less">view less</h4>
-        </div>
-
-<!-- DEVICES CAROUSEL -->
-        <div class="devices__carousel">
-          <div id="fdcm" class="devices__carousel--item">
-            <img src="images/icons/camera-o.png" alt="Active camera icon">
-            <h3>Front Door<br>Camera-main</h3>
+          <div class="rooms__titles">
+            <h2 class="rooms__titles--rooms">Rooms</h2>
+            <h4 class="rooms__titles--view-all">view all</h4>
+            <h4 class="rooms__titles--view-less">view less</h4>
           </div>
 
-          <div id="fdl" class="devices__carousel--item">
-            <img src="images/icons/lock-b.png" alt="inactive lock icon">
-            <h3>Front Door<br>Lock</h3>
+          <div class="rooms__carousel">
+            <div class="rooms__carousel--item">Front Door</div>
+            <div class="rooms__carousel--item">Hallway</div>
+            <div class="rooms__carousel--item">Garage</div>
           </div>
 
-          <div id="hwa" class="devices__carousel--item">
-            <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
-            <h3>Hallway<br>Alarm</h3>
+          <div class="rooms__hidden">
+            <div class="rooms__view-all">
+              <div class="rooms__view-all--item">Front Door</div>
+              <div class="rooms__view-all--item">Hallway</div>
+              <div class="rooms__view-all--item">Garage</div>
+            </div>
           </div>
 
-          <div id="hwc" class="devices__carousel--item">
-            <img src="images/icons/camera-b.png" alt="Inactive camera icon">
-            <h3>Hallway<br>Camera</h3>
+        </section> <!-- END OF ROOMS SECTION -->
+
+
+  <!-- DEVICES -->
+        <section class="devices">
+
+          <div class="devices__titles">
+            <h2 class="devices__titles--devices">Devices</h2>
+            <h4 class="devices__titles--view-all">view all</h4>
+            <h4 class="devices__titles--view-less">view less</h4>
           </div>
 
-          <div id="hws" class="devices__carousel--item">
-            <img src="images/icons/sensor-b.png" alt="Inactive alarm icon">
-            <h3>Hallway<br>sensor</h3>
-          </div>
-
-          <div id="gs" class="devices__carousel--item">
-            <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
-            <h3>Garage<br>sensor</h3>
-          </div>
-        </div>
-
-
-<!-- DEVICES VIEW ALL -->
-        <div class="devices__hidden">
-          <div class="devices__view-all">
-            <div id="fdcm" class="devices__view-all--item">
+  <!-- DEVICES CAROUSEL -->
+          <div class="devices__carousel">
+            <div class="devices__carousel--item fdca">
               <img src="images/icons/camera-o.png" alt="Active camera icon">
-              <h3>Front Door<br>Camera-main</h3>
+              <h3>Front Door<br>Camera-A</h3>
             </div>
 
-            <div id="fdl" class="devices__view-all--item">
+            <div class="devices__carousel--item fdcb">
+              <img src="images/icons/camera-o.png" alt="Active camera icon">
+              <h3>Front Door<br>Camera-B</h3>
+            </div>
+
+            <div class="devices__carousel--item fdl">
               <img src="images/icons/lock-b.png" alt="inactive lock icon">
               <h3>Front Door<br>Lock</h3>
             </div>
 
-            <div id="hwa" class="devices__view-all--item">
+            <div class="devices__carousel--item hwa">
               <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
               <h3>Hallway<br>Alarm</h3>
             </div>
 
-            <div id="hwc" class="devices__view-all--item">
+            <div class="devices__carousel--item hwc">
               <img src="images/icons/camera-b.png" alt="Inactive camera icon">
               <h3>Hallway<br>Camera</h3>
             </div>
 
-            <div id="hws" class="devices__view-all--item">
+            <div class="devices__carousel--item hws">
               <img src="images/icons/sensor-b.png" alt="Inactive alarm icon">
               <h3>Hallway<br>sensor</h3>
             </div>
 
-            <div id="gs" class="devices__view-all--item">
+            <div class="devices__carousel--item gs">
               <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
               <h3>Garage<br>sensor</h3>
             </div>
           </div>
-      </div>
 
 
-<!-- DEVICE ITEM MENUS -->
-        <div class="devices-menus">
+  <!-- DEVICES VIEW ALL -->
+          <div class="devices__hidden">
+            <div class="devices__view-all">
 
-<!-- FRONT DOOR CAMERA MAIN -->
-          <div class="devices-menus__fdcm">
+              <div class="devices__view-all--item fdca">
+                <img src="images/icons/camera-o.png" alt="Active camera icon">
+                <h3>Front Door<br>Camera-A</h3>
+              </div>
 
-            <div class="section-heading"> <!-- this contains reusable code so that all different heading sections of this interface have the same structure -->
-              <h1 class="section-heading__title">Front Door<br>Camera-main</h1>
-              <img id="fdcmClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+              <div class="devices__view-all--item fdcb">
+                <img src="images/icons/camera-o.png" alt="Active camera icon">
+                <h3>Front Door<br>Camera-B</h3>
+              </div>
+
+              <div class="devices__view-all--item fdl">
+                <img src="images/icons/lock-b.png" alt="inactive lock icon">
+                <h3>Front Door<br>Lock</h3>
+              </div>
+
+              <div class="devices__view-all--item hwa">
+                <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
+                <h3>Hallway<br>Alarm</h3>
+              </div>
+
+              <div class="devices__view-all--item hwc">
+                <img src="images/icons/camera-b.png" alt="Inactive camera icon">
+                <h3>Hallway<br>Camera</h3>
+              </div>
+
+              <div class="devices__view-all--item hws">
+                <img src="images/icons/sensor-b.png" alt="Inactive alarm icon">
+                <h3>Hallway<br>sensor</h3>
+              </div>
+
+              <div class="devices__view-all--item gs">
+                <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
+                <h3>Garage<br>sensor</h3>
+              </div>
+            </div>
+        </div>
+
+
+  <!-- DEVICE ITEM MENUS -->
+          <div class="devices-menus">
+
+  <!-- FRONT DOOR CAMERA A -->
+            <div class="devices-menus__fdca">
+
+              <div class="section-heading"> <!-- this contains reusable code so that all different heading sections of this interface have the same structure -->
+                <h1 class="section-heading__title">Front Door<br>Camera-A</h1>
+                <img id="fdcaClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+              </div>
+
+              <div class="devices-menu__content">
+
+                <div class="">
+                  <img src="images/icons/camera-o.png" alt="Active camera icon">
+                  <h2>On</h2>
+                </div>
+
+                <div class="">
+                  <img src="images/icons/camera-o.png" alt="Active camera icon">
+                  <h2>View Feed</h2>
+                </div>
+
+              </div>
+
+            </div>
+
+<!-- FRONT DOOR CAMERA B -->
+          <div class="devices-menus__fdcb">
+
+            <div class="section-heading">
+              <h1 class="section-heading__title">Front Door<br>Camera-A</h1>
+              <img id="fdcbClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
             </div>
 
             <div class="devices-menu__content">
+
               <div class="">
                 <img src="images/icons/camera-o.png" alt="Active camera icon">
                 <h2>On</h2>
@@ -236,31 +272,40 @@
 
           </div>
 
+<!-- FRONT DOOR LOCK -->
           <div class="devices-menus__fdl">
-            <img id="fdlClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
-            <h1 class="devices-menus__title">Front Door<br>Lock</h1>
+            <div class="section-heading">
+              <h1 class="section-heading__title">Front Door<br>Lock</h1>
+              <img id="fdlClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+            </div>
           </div>
 
+<!-- HALLWAY ALARM -->
           <div class="devices-menus__hwa">
-            <img id="hwaClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
+            <div class="section-heading">
+              <h1 class="section-heading__title">Hallway<br>Alarm</h1>
+              <img id="hwaClose" class="section-heading__close" src="images/icons/cross.png" alt="menu close button">
+            </div>
           </div>
 
+<!-- HALLWAY CAMERA -->
           <div class="devices-menus__hwc">
             <img id="hwcClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
           </div>
 
+<!-- HALLWAY SENSOR -->
           <div class="devices-menus__hws">
             <img id="hwsClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
           </div>
 
+<!-- GARAGE SENSOR -->
           <div class="devices-menus__gs">
             <img id="gsClose" class="devices-menus__close" src="images/icons/cross.png" alt="menu close button">
           </div>
 
         </div>
 
-      </section>
-
+      </section> <!-- END OF DEVICES SECTION -->
 
 
 <!-- BOTTOM NAV BAR -->

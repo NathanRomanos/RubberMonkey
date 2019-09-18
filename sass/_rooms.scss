@@ -22,14 +22,9 @@
 }
 
 
-.rooms__titles--view-all:active, .rooms__titles--view-less:active{
-  transform: scale(0.9);
-}
-
-
 // CAROUSEL SETTINGS
 .rooms__carousel{
-  height: 25vh;
+  height: 22vh;
   width: 85%;
   margin: 5%;
 }

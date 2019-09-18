@@ -43,7 +43,7 @@ h4{
 // CONNTENT CONTAINER for home page
 .contain{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
   background: #151828; /* Old browsers */
@@ -52,6 +52,7 @@ h4{
   background: linear-gradient(135deg,  #151828 0%,#27374b 50%,#374b69 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 
 
 // SECTION HEADINGS this contains reusable code so that all different heading sections of this interface have the same structure

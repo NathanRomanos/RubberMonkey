@@ -21,14 +21,10 @@
   color: $color3;
 }
 
-.devices__titles--view:active{
-  transform: scale(0.9);
-}
-
 
 // CAROUSEL SETTINGS
 .devices__carousel{
-  height: 25vh;
+  height: 22vh;
   width: 85%;
   margin: 5%;
 }
@@ -58,6 +54,7 @@
 // VIEW ALL Settings
 .devices__hidden{
   display: none;
+  margin-bottom: 70px;
 }
 
 .devices__view-all{
@@ -71,17 +68,19 @@
   width: 35vw;
   height: 35vw;
   margin: 5vw;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
   img{
     height: 50%;
-    margin: 5px auto;
   }
   h3{
     font-family: 'Open Sans', sans-serif;
-    margin: 5px;
-    position: absolute;
-    bottom: 0;
     color: $color1;
+    width: 100%;
+    margin-left: 5%;
   }
 }
 
@@ -105,7 +104,11 @@
 
 
 // INDIVIDUAL DEVICES MENUS
-.devices-menus__fdcm{
+.devices-menus__fdca{
+  display: none;
+}
+
+.devices-menus__fdcb{
   display: none;
 }
 
