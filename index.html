@@ -23,10 +23,6 @@
       margin: 0px 20px;
     }
 
-    .slick-slide img {
-      /* width: 100%; */
-    }
-
     .slick-prev:before,
     .slick-next:before {
       color: #fe8c26;
@@ -83,7 +79,7 @@
 
         <div class="burgerMenu__profile">
 
-          <img src="images/pfp-change.png" alt="profile picture">
+          <img src="images/pfp.png" alt="profile picture">
 
           <h3>Julian Hitchchild</h3>
 
@@ -102,6 +98,11 @@
           </ul>
         </div>
 
+        <div class="burger-menu__logo">
+          <img src="images/SecureMonkey.png" alt="">
+          <p>2019 Rubber Monkey Sales ltd.</p>
+        </div>
+
       </div>
 
 
@@ -115,23 +116,23 @@
           </div>
 
           <div class="rooms__carousel">
-            <div class="rooms__carousel--item"></div>
-            <div class="rooms__carousel--item rooms__hallway"></div>
-            <div class="rooms__carousel--item rooms__garage"></div>
+            <div class="rooms__carousel--item rooms__front-door"> <h3>Front Door</h3> </div>
+            <div class="rooms__carousel--item rooms__hallway"> <h3>Hallway</h3> </div>
+            <div class="rooms__carousel--item rooms__garage"> <h3>Garage</h3> </div>
           </div>
 
           <div class="rooms__hidden">
             <div class="rooms__view-all">
-              <div class="rooms__view-all--item">Front Door</div>
-              <div class="rooms__view-all--item rooms__hallway"></div>
-              <div class="rooms__view-all--item rooms__garage"></div>
+              <div class="rooms__view-all--item rooms__front-door"> <h3>Front Door</h3> </div>
+              <div class="rooms__view-all--item rooms__hallway"> <h3>Hallway</h3> </div>
+              <div class="rooms__view-all--item rooms__garage"> <h3>Garage</h3> </div>
             </div>
           </div>
 
         </section> <!-- END OF ROOMS SECTION -->
 
 
-  <!-- DEVICES -->
+<!-- DEVICES -->
         <section class="devices">
 
           <div class="devices__titles">
@@ -140,15 +141,17 @@
             <h4 class="devices__titles--view-less">view less</h4>
           </div>
 
-  <!-- DEVICES CAROUSEL -->
+<!-- DEVICES CAROUSEL -->
           <div class="devices__carousel">
             <div class="devices__carousel--item fdca">
-              <img src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdca__on" src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdca__off" src="images/icons/camera-b.png" alt="Active camera icon">
               <h3>Front Door<br>Camera-A</h3>
             </div>
 
             <div class="devices__carousel--item fdcb">
-              <img src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdcb__on" src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdcb__off" src="images/icons/camera-b.png" alt="Active camera icon">
               <h3>Front Door<br>Camera-B</h3>
             </div>
 
@@ -184,12 +187,14 @@
             <div class="devices__view-all">
 
               <div class="devices__view-all--item fdca">
-                <img src="images/icons/camera-o.png" alt="Active camera icon">
+                <img class="fdca__on" src="images/icons/camera-o.png" alt="Active camera icon">
+                <img class="fdca__off" src="images/icons/camera-b.png" alt="Active camera icon">
                 <h3>Front Door<br>Camera-A</h3>
               </div>
 
               <div class="devices__view-all--item fdcb">
-                <img src="images/icons/camera-o.png" alt="Active camera icon">
+                <img class="fdcb__on" src="images/icons/camera-o.png" alt="Active camera icon">
+                <img class="fdcb__off" src="images/icons/camera-b.png" alt="Active camera icon">
                 <h3>Front Door<br>Camera-B</h3>
               </div>
 
@@ -234,13 +239,23 @@
 
               <div class="devices-menu__content">
 
-                <div class="">
+                <div class="devices-menu__fdca--on">
                   <img src="images/icons/camera-o.png" alt="Active camera icon">
                   <h2>On</h2>
                 </div>
 
+                <div class="devices-menu__fdca--off">
+                  <img src="images/icons/camera-w.png" alt="Active camera icon">
+                  <h2>Off</h2>
+                </div>
+
                 <div class="">
-                  <img src="images/icons/camera-o.png" alt="Active camera icon">
+                  <img src="images/icons/front-door-view-icon.png" alt="Active camera icon">
+                  <h2>Night-mode</h2>
+                </div>
+
+                <div class="devices-menu__feed fdca__feed">
+                  <img src="images/icons/front-door-view-icon.png" alt="Active camera icon">
                   <h2>View Feed</h2>
                 </div>
 
@@ -249,28 +264,33 @@
             </div>
 
 <!-- FRONT DOOR CAMERA B -->
-          <div class="devices-menus__fdcb">
+            <div class="devices-menus__fdcb">
 
-            <div class="section-heading">
-              <h1 class="section-heading__title">Front Door<br>Camera-A</h1>
-              <img class="section-heading__close fdcbClose" src="images/icons/cross.png" alt="menu close button">
-            </div>
-
-            <div class="devices-menu__content">
-
-              <div class="">
-                <img src="images/icons/camera-o.png" alt="Active camera icon">
-                <h2>On</h2>
+              <div class="section-heading">
+                <h1 class="section-heading__title">Front Door<br>Camera-B</h1>
+                <img class="section-heading__close fdcbClose" src="images/icons/cross.png" alt="menu close button">
               </div>
 
-              <div class="">
-                <img src="images/icons/camera-o.png" alt="Active camera icon">
-                <h2>View Feed</h2>
+              <div class="devices-menu__content">
+
+                <div class="devices-menu__fdcb--on">
+                  <img src="images/icons/camera-o.png" alt="Active camera icon">
+                  <h2>On</h2>
+                </div>
+
+                <div class="devices-menu__fdcb--off">
+                  <img src="images/icons/camera-w.png" alt="Active camera icon">
+                  <h2>Off</h2>
+                </div>
+
+                <div class="devices-menu__feed fdcb__feed">
+                  <img src="images/icons/front-door-view-c-icon.png" alt="Active camera icon">
+                  <h2>View Feed</h2>
+                </div>
+
               </div>
 
             </div>
-
-          </div>
 
 <!-- FRONT DOOR LOCK -->
           <div class="devices-menus__fdl">
@@ -307,11 +327,13 @@
 
       </section> <!-- END OF DEVICES SECTION -->
 
+    </div> <!-- CONTAIN DIV ENDS HERE -->
+
 
 <!-- BOTTOM NAV BAR -->
       <nav class="bottomNav">
 
-        <a href="index.html"><img class="bottomNav__home" src="images/icons/home-w.png" alt=""></a>
+        <a href="index.html"><img class="bottomNav__home" src="images/icons/home-w_1.png" alt=""></a>
 
         <div class="bottomNav__scroll">
           <div class=""><img src="images/icons/camera-w.png" alt=""></div>
@@ -322,12 +344,58 @@
 
       </nav>
 
-    </div> <!-- CONTAIN DIV ENDS HERE -->
+
+<!-- FRONT DOOR ROOM SECTION -->
+    <div class="front-door-contain">
+
+      <div class="room-heading room-heading__fd">
+        <h1 class="room-heading__title">Front Door</h1>
+
+        <img class="room-heading__close fd-close" src="images/icons/cross.png" alt="front door page close button">
+      </div>
+
+      <img class="room-heading__icon" src="images/icons/SecureMonkey-Icon-w.png" alt="">
+
+    </div> <!-- FRONT DOOR ENDS HERE -->
 
 
-
+<!-- HALLWAY ROOM SECTION -->
     <div class="hallway-contain">
 
+      <div class="room-heading room-heading__hw">
+        <h1 class="room-heading__title">Hallway</h1>
+
+        <img class="room-heading__close hw-close" src="images/icons/cross.png" alt="Hallway page close button">
+      </div>
+
+      <img class="room-heading__icon" src="images/icons/SecureMonkey-Icon-w.png" alt="">
+
+    </div> <!-- FRONT DOOR ENDS HERE -->
+
+
+<!-- GARAGE ROOM SECTION -->
+    <div class="garage-contain">
+
+      <div class="room-heading room-heading__g">
+        <h1 class="room-heading__title">Garage</h1>
+
+        <img class="room-heading__close g-close" src="images/icons/cross.png" alt="Garage page close button">
+      </div>
+
+      <img class="room-heading__icon" src="images/icons/SecureMonkey-Icon-w.png" alt="">
+
+    </div> <!-- FRONT DOOR ENDS HERE -->
+
+
+<!-- FRONT DOOR CAMERA A VIEW FEED -->
+    <div class="fdca-feed-contain">
+      <img class="feed-contain__close fdca-feed__close" src="images/icons/cross.png" alt="Front door view feed close button">
+    </div>
+
+
+<!-- FRONT DOOR CAMERA B VIEW FEED -->
+    <div class="fdcb-feed-contain">
+      <img class="feed-contain__close fdcb-feed__close" src="images/icons/cross.png" alt="Front door view feed close button">
     </div>
 
 
@@ -384,7 +452,7 @@
     <div class="settings-contain">
 
       <div class="section-heading">
-        <h1 class="section-heading__title">Secure Monkey settings</h1>
+        <h1 class="section-heading__title">secure monkey settings</h1>
 
         <img class="section-heading__close settings-close" src="images/icons/cross.png" alt="settings menu close button">
       </div>

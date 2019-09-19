@@ -16,13 +16,10 @@ $(document).ready(function(){
 
 
   $('.add-d').click(function(){
-    $('.add-d-contain').fadeToggle(200);
-    $('.contain').fadeToggle(200);
-    $('.burger-menu__list--hidden').fadeToggle(200);
+    $('.add-d-contain, .contain, .burger-menu__list--hidden, .bottomNav').fadeToggle(200);
   });
   $('.add-d-close').click(function(){
-    $('.add-d-contain').fadeToggle(200);
-    $('.contain').fadeToggle(200);
+    $('.add-d-contain, .contain, .bottomNav').fadeToggle(200);
     $('.burgerMenu').hide();
   });
 
@@ -49,12 +46,38 @@ $(document).ready(function(){
 
 
 
+// FRONT DOOR PAGE
+  $('.rooms__front-door').click(function(){
+    $('.contain, .front-door-contain').fadeToggle(200);
+  });
+  $('.fd-close').click(function(){
+    $('.contain, .front-door-contain').fadeToggle(200);
+  });
+
+
+  // HALLWAY PAGE
+    $('.rooms__hallway').click(function(){
+      $('.contain, .hallway-contain').fadeToggle(200);
+    });
+    $('.hw-close').click(function(){
+      $('.contain, .hallway-contain').fadeToggle(200);
+    });
+
+  // HALLWAY PAGE
+    $('.rooms__garage').click(function(){
+      $('.contain, .garage-contain').fadeToggle(200);
+    });
+    $('.g-close').click(function(){
+      $('.contain, .garage-contain').fadeToggle(200);
+    });
+
+
+
 // DEVICES VIEW ALL FUNCTIONS
     $('.devices__titles--view-all, .devices__titles--view-less').click(function(){
       $('.devices__hidden, .devices__carousel').toggle(200);
       $('.devices__titles--view-all, .devices__titles--view-less').toggle();
     });
-
 
 
 //DEVICE BUTTON TOGGLE
@@ -67,10 +90,10 @@ $(document).ready(function(){
 
 
   $('.fdcb').click(function(){
-    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
+    $('.devices-menus, .devices-menus__fdcb').fadeToggle(200);
   });
   $('.fdcbClose').click(function(){
-    $('.devices-menus, .devices-menus__fdca').fadeToggle(200);
+    $('.devices-menus, .devices-menus__fdcb').fadeToggle(200);
   });
 
 
@@ -112,6 +135,47 @@ $(document).ready(function(){
   $('.gsClose').click(function(){
     $('.devices-menus, .devices-menus__gs').fadeToggle(200);
   });
+
+
+  // FONR DOOR CAMERA-A
+  $('.devices-menu__fdca--on').click(function(){
+    $('.devices-menu__fdca--off, .devices-menu__fdca--on').toggle();
+    $('.fdca__off, .fdca__on').toggle();
+  });
+  $('.devices-menu__fdca--off').click(function(){
+    $('.devices-menu__fdca--off, .devices-menu__fdca--on').toggle();
+    $('.fdca__off, .fdca__on').toggle();
+  });
+
+  $('.fdca__feed').click(function(){
+    $('.contain, .fdca-feed-contain').fadeToggle(200);
+    $('.bottomNav').hide()
+  });
+  $('.fdca-feed__close').click(function(){
+    $('.contain, .fdca-feed-contain').fadeToggle(200);
+    $('.bottomNav').show(1000)
+  });
+
+
+  // FONR DOOR CAMERA-B
+  $('.devices-menu__fdcb--on').click(function(){
+    $('.devices-menu__fdcb--off, .devices-menu__fdcb--on').toggle();
+    $('.fdcb__off, .fdcb__on').toggle();
+  });
+  $('.devices-menu__fdcb--off').click(function(){
+    $('.devices-menu__fdcb--off, .devices-menu__fdcb--on').toggle();
+    $('.fdcb__off, .fdcb__on').toggle();
+  });
+
+  $('.fdcb__feed').click(function(){
+    $('.contain, .fdcb-feed-contain').fadeToggle(200);
+    $('.bottomNav').hide()
+  });
+  $('.fdcb-feed__close').click(function(){
+    $('.contain, .fdcb-feed-contain').fadeToggle(200);
+    $('.bottomNav').show(1000)
+  });
+
 
 // CAROUSEL SLICK
   $(".rooms__carousel").slick({

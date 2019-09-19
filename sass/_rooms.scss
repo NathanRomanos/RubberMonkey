@@ -33,10 +33,24 @@
   background-color: $color2;
   width: 20vh !important;
   height: 20vh !important;
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    color: $color4;
+    text-shadow: 0px 0px 8px $color1;
+  }
 }
 
 .rooms__carousel--item:active{
   transform: scale(0.9);
+}
+
+.rooms__front-door{
+  background-image: url('../images/front-door.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .rooms__hallway{
@@ -69,8 +83,51 @@
   width: 35vw;
   height: 35vw;
   margin: 5vw;
+  position: relative;
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    color: $color4;
+    text-shadow: 0px 0px 8px $color1;
+    margin-left: 5%;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .rooms__view-all--item:active{
   transform: scale(0.9);
+}
+
+
+// ROOMS PAGES SHARED CODE
+
+.room-heading{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 30vh;
+  border-bottom: 4px solid white;
+}
+
+.room-heading__title{
+  margin: 5%;
+  width: 70%;
+  text-shadow: 0px 0px 5px $color1;
+}
+
+.room-heading__close{
+  width: 40px;
+  height: 40px;
+  margin: 5%;
+}
+
+.room-heading__close:active{
+  transform: scale(0.9);
+}
+
+.room-heading__icon{
+  width: 15vw;
+  position: absolute;
+  top: 25vh;
+  left: 42.5vw;
 }

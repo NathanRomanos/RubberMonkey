@@ -1,0 +1,17 @@
+.front-door-contain{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #151828 0%, #27374b 50%, #374b69 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #151828 0%,#27374b 50%,#374b69 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #151828 0%,#27374b 50%,#374b69 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.room-heading__fd{
+  background-image: url('../images/front-door.jpg');
+  background-position: top;
+  background-size: cover;
+}

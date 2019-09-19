@@ -39,7 +39,7 @@ nav {
 .bottomNav__home {
   float: left;
   height: 50px;
-  margin: 10px; }
+  margin: 10px 5%; }
 
 .bottomNav__home:active {
   transform: scale(0.9); }
@@ -106,6 +106,18 @@ nav {
     .burger-menu__list ul li:active {
       transform: scale(0.9); }
 
+.burger-menu__logo {
+  position: absolute;
+  bottom: 5vw;
+  left: 5vw; }
+  .burger-menu__logo img {
+    width: 40%;
+    display: inline-block; }
+  .burger-menu__logo p {
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%; }
+
 .burger-menu__list--hidden {
   display: none;
   font-size: 0.8rem;
@@ -138,7 +150,8 @@ nav {
 .devices__carousel--item {
   background-color: #c4ccde;
   width: 20vh !important;
-  height: 20vh !important; }
+  height: 20vh !important;
+  text-align: center; }
   .devices__carousel--item img {
     height: 50%;
     margin: 5px auto; }
@@ -147,7 +160,8 @@ nav {
     margin: 5px;
     position: absolute;
     bottom: 0;
-    color: #27374b; }
+    color: #27374b;
+    text-align: left; }
 
 .devices__carousel--item:active {
   transform: scale(0.9); }
@@ -215,7 +229,7 @@ nav {
 .devices-menu__content {
   display: grid;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   grid-template-columns: 100vw;
   justify-items: center;
   align-content: space-around; }
@@ -225,6 +239,54 @@ nav {
     margin-top: 5%;
     text-align: center;
     font-family: 'Open Sans', sans-serif; }
+
+.devices-menu__fdca--on:active {
+  transform: scale(0.9); }
+
+.devices-menu__fdca--off:active {
+  transform: scale(0.9); }
+
+.fdca__off {
+  display: none; }
+
+.devices-menu__fdca--off {
+  display: none; }
+
+.fdcb__off {
+  display: none; }
+
+.devices-menu__fdcb--off {
+  display: none; }
+
+.feed-contain__close {
+  position: absolute;
+  bottom: 9vw;
+  right: 9vw;
+  width: 40px;
+  height: 40px; }
+
+.feed-contain__close:active {
+  transform: scale(0.9); }
+
+.fdca-feed-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-position: #27374b;
+  background-image: url("../images/front-door-view-sw.jpg");
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.fdcb-feed-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-position: #27374b;
+  background-image: url("../images/front-door-view-c-sw.jpg");
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
 
 .rooms {
   display: block;
@@ -254,9 +316,21 @@ nav {
   background-color: #374b69;
   width: 20vh !important;
   height: 20vh !important; }
+  .rooms__carousel--item h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    color: #c4ccde;
+    text-shadow: 0px 0px 8px #27374b; }
 
 .rooms__carousel--item:active {
   transform: scale(0.9); }
+
+.rooms__front-door {
+  background-image: url("../images/front-door.jpg");
+  background-position: center;
+  background-size: cover; }
 
 .rooms__hallway {
   background-image: url("../images/hallway.jpg");
@@ -280,10 +354,44 @@ nav {
   background-color: #374b69;
   width: 35vw;
   height: 35vw;
-  margin: 5vw; }
+  margin: 5vw;
+  position: relative; }
+  .rooms__view-all--item h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #c4ccde;
+    text-shadow: 0px 0px 8px #27374b;
+    margin-left: 5%;
+    position: absolute;
+    bottom: 0; }
 
 .rooms__view-all--item:active {
   transform: scale(0.9); }
+
+.room-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 30vh;
+  border-bottom: 4px solid white; }
+
+.room-heading__title {
+  margin: 5%;
+  width: 70%;
+  text-shadow: 0px 0px 5px #27374b; }
+
+.room-heading__close {
+  width: 40px;
+  height: 40px;
+  margin: 5%; }
+
+.room-heading__close:active {
+  transform: scale(0.9); }
+
+.room-heading__icon {
+  width: 15vw;
+  position: absolute;
+  top: 25vh;
+  left: 42.5vw; }
 
 .add-d-contain {
   display: none;
@@ -333,6 +441,69 @@ nav {
   height: 100vh;
   background-color: #27374b; }
 
+.front-door-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.room-heading__fd {
+  background-image: url("../images/front-door.jpg");
+  background-position: top;
+  background-size: cover; }
+
+.hallway-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.room-heading__hw {
+  background-image: url("../images/hallway.jpg");
+  background-position: top;
+  background-size: cover; }
+
+.garage-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.room-heading__g {
+  background-image: url("../images/garage.jpg");
+  background-position: top;
+  background-size: cover; }
+
 body {
   background-color: #27374b; }
 
@@ -353,6 +524,11 @@ h3 {
 h4 {
   font-family: 'Open Sans', sans-serif;
   color: #c4ccde; }
+
+p {
+  color: #c4ccde;
+  font-size: 0.8rem;
+  font-family: 'Open Sans', sans-serif; }
 
 .contain {
   width: 100vw;

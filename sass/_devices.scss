@@ -33,6 +33,7 @@
   background-color: $color4;
   width: 20vh !important;
   height: 20vh !important;
+  text-align: center;
   img{
     height: 50%;
     margin: 5px auto;
@@ -43,6 +44,7 @@
     position: absolute;
     bottom: 0;
     color: $color1;
+    text-align: left;
   }
 }
 
@@ -138,7 +140,7 @@
 .devices-menu__content{
   display: grid;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   grid-template-columns: 100vw;
   justify-items: center;
   align-content: space-around;
@@ -150,4 +152,66 @@
     text-align: center;
     font-family: 'Open Sans', sans-serif;
   }
+}
+
+
+.devices-menu__fdca--on:active{
+  transform: scale(0.9);
+}
+
+.devices-menu__fdca--off:active{
+  transform: scale(0.9);
+}
+
+// HIDDEN ICONS
+
+.fdca__off{
+  display: none;
+}
+.devices-menu__fdca--off{
+  display: none;
+}
+
+.fdcb__off{
+  display: none;
+}
+.devices-menu__fdcb--off{
+  display: none;
+}
+
+
+// VIEW FEED
+.feed-contain__close{
+  position: absolute;
+  bottom: 9vw;
+  right: 9vw;
+  width: 40px;
+  height: 40px;
+}
+
+.feed-contain__close:active{
+  transform: scale(0.9);
+}
+
+
+.fdca-feed-contain{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-position: $color1;
+    background-image: url('../images/front-door-view-sw.jpg');
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.fdcb-feed-contain{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-position: $color1;
+    background-image: url('../images/front-door-view-c-sw.jpg');
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
 }
