@@ -11,12 +11,15 @@
   padding: 5%; }
 
 .topNav__title {
-  float: left; }
+  float: left;
+  width: 50%;
+  text-shadow: 0px 0px 5px #27374b; }
 
 .topNav__bell {
   float: right; }
   .topNav__bell img {
-    width: 35px; }
+    width: 50px;
+    margin: -5px; }
 
 .topNav__bell:active {
   transform: scale(0.9); }
@@ -25,7 +28,8 @@
   float: right;
   margin-left: 10%; }
   .topNav__burger img {
-    width: 40px; }
+    width: 50px;
+    margin: -5px; }
 
 .topNav__burger:active {
   transform: scale(0.9); }
@@ -258,6 +262,12 @@ nav {
 .devices-menu__fdcb--off {
   display: none; }
 
+.hwc__on {
+  display: none; }
+
+.devices-menu__hwc--on {
+  display: none; }
+
 .feed-contain__close {
   position: absolute;
   bottom: 9vw;
@@ -279,6 +289,16 @@ nav {
   background-repeat: no-repeat; }
 
 .fdcb-feed-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-position: #27374b;
+  background-image: url("../images/front-door-view-c-sw.jpg");
+  background-position: center;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.hwc-feed-contain {
   display: none;
   width: 100vw;
   height: 100vh;
@@ -368,24 +388,10 @@ nav {
   transform: scale(0.9); }
 
 .room-heading {
-  display: flex;
-  justify-content: space-between;
   width: 100vw;
   height: 30vh;
-  border-bottom: 4px solid white; }
-
-.room-heading__title {
-  margin: 5%;
-  width: 70%;
-  text-shadow: 0px 0px 5px #27374b; }
-
-.room-heading__close {
-  width: 40px;
-  height: 40px;
-  margin: 5%; }
-
-.room-heading__close:active {
-  transform: scale(0.9); }
+  border-bottom: 4px solid white;
+  padding: 5%; }
 
 .room-heading__icon {
   width: 15vw;
@@ -444,7 +450,8 @@ nav {
 .front-door-contain {
   display: none;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 80px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
   background: #151828;
   /* Old browsers */

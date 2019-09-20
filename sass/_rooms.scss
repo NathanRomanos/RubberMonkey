@@ -102,27 +102,10 @@
 // ROOMS PAGES SHARED CODE
 
 .room-heading{
-  display: flex;
-  justify-content: space-between;
   width: 100vw;
   height: 30vh;
   border-bottom: 4px solid white;
-}
-
-.room-heading__title{
-  margin: 5%;
-  width: 70%;
-  text-shadow: 0px 0px 5px $color1;
-}
-
-.room-heading__close{
-  width: 40px;
-  height: 40px;
-  margin: 5%;
-}
-
-.room-heading__close:active{
-  transform: scale(0.9);
+  padding: 5%;
 }
 
 .room-heading__icon{

@@ -8,6 +8,11 @@ $(document).ready(function(){
     $('.burger-menu__list--hidden').hide(200);
   });
 
+  $('.bottomNav__home').click(function(){
+    $('.contain').fadeIn(200)
+    $('.front-door-contain, .hallway-contain, .garage-contain').fadeOut(200)
+  });
+
 
 // MENU ADD FUNCTIONS
   $('.add').click(function(){
@@ -55,7 +60,7 @@ $(document).ready(function(){
   });
 
 
-  // HALLWAY PAGE
+// HALLWAY PAGE
     $('.rooms__hallway').click(function(){
       $('.contain, .hallway-contain').fadeToggle(200);
     });
@@ -63,7 +68,7 @@ $(document).ready(function(){
       $('.contain, .hallway-contain').fadeToggle(200);
     });
 
-  // HALLWAY PAGE
+// HALLWAY PAGE
     $('.rooms__garage').click(function(){
       $('.contain, .garage-contain').fadeToggle(200);
     });
@@ -137,7 +142,7 @@ $(document).ready(function(){
   });
 
 
-  // FONR DOOR CAMERA-A
+// FRONT DOOR CAMERA-A
   $('.devices-menu__fdca--on').click(function(){
     $('.devices-menu__fdca--off, .devices-menu__fdca--on').toggle();
     $('.fdca__off, .fdca__on').toggle();
@@ -157,7 +162,7 @@ $(document).ready(function(){
   });
 
 
-  // FONR DOOR CAMERA-B
+// FRONT DOOR CAMERA-B
   $('.devices-menu__fdcb--on').click(function(){
     $('.devices-menu__fdcb--off, .devices-menu__fdcb--on').toggle();
     $('.fdcb__off, .fdcb__on').toggle();
@@ -168,13 +173,38 @@ $(document).ready(function(){
   });
 
   $('.fdcb__feed').click(function(){
-    $('.contain, .fdcb-feed-contain').fadeToggle(200);
+    $('.contain, .front-door-contain, .devices-menus').hide(200);
+    $('.fdcb-feed-contain').show(200);
     $('.bottomNav').hide()
   });
   $('.fdcb-feed__close').click(function(){
-    $('.contain, .fdcb-feed-contain').fadeToggle(200);
+    $('.contain, .fdcb-feed-contain, .devices-menus').fadeToggle(200);
     $('.bottomNav').show(1000)
   });
+  $('.fdcb-room-feed__close').click(function(){
+    $('.contain, .fdcb-feed-contain, .devices-menus').fadeToggle(200);
+    $('.bottomNav').show(1000)
+  });
+
+
+// HALLWAY CAMERA
+    $('.devices-menu__hwc--on').click(function(){
+      $('.devices-menu__hwc--off, .devices-menu__hwc--on').toggle();
+      $('.hwc__off, .hwc__on').toggle();
+    });
+    $('.devices-menu__hwc--off').click(function(){
+      $('.devices-menu__hwc--off, .devices-menu__hwc--on').toggle();
+      $('.hwc__off, .hwc__on').toggle();
+    });
+
+    $('.hwc__feed').click(function(){
+      $('.contain, .hwc-feed-contain').fadeToggle(200);
+      $('.bottomNav').hide()
+    });
+    $('.hwc-feed__close').click(function(){
+      $('.contain, .hwc-feed-contain').fadeToggle(200);
+      $('.bottomNav').show(1000)
+    });
 
 
 // CAROUSEL SLICK

@@ -179,6 +179,13 @@
   display: none;
 }
 
+.hwc__on{
+  display: none;
+}
+.devices-menu__hwc--on{
+  display: none;
+}
+
 
 // VIEW FEED
 .feed-contain__close{
@@ -206,6 +213,17 @@
 }
 
 .fdcb-feed-contain{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-position: $color1;
+    background-image: url('../images/front-door-view-c-sw.jpg');
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.hwc-feed-contain{
     display: none;
     width: 100vw;
     height: 100vh;
