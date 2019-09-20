@@ -122,7 +122,8 @@
             </div>
 
             <div class="devices__carousel--item fdl">
-              <img src="images/icons/lock-b.png" alt="inactive lock icon">
+              <img class="fdl__off" src="images/icons/lock-open-b.png" alt="inactive lock icon">
+              <img class="fdl__on" src="images/icons/lock-o.png" alt="inactive lock icon">
               <h3>Front Door<br>Lock</h3>
             </div>
 
@@ -167,7 +168,8 @@
               </div>
 
               <div class="devices__view-all--item fdl">
-                <img src="images/icons/lock-b.png" alt="inactive lock icon">
+                <img class="fdl__off" src="images/icons/lock-open-b.png" alt="inactive lock icon">
+                <img class="fdl__on" src="images/icons/lock-o.png" alt="inactive lock icon">
                 <h3>Front Door<br>Lock</h3>
               </div>
 
@@ -236,7 +238,7 @@
 <!-- DEVICE ITEM MENUS -->
         <div class="devices-menus">
 
-<!-- FRONT DOOR CAMERA A -->
+<!-- FRONT DOOR CAMERA A MENU-->
           <div class="devices-menus__fdca">
 
             <div class="section-heading"> <!-- this contains reusable code so that all different heading sections of this interface have the same structure -->
@@ -270,7 +272,7 @@
 
           </div>
 
-<!-- FRONT DOOR CAMERA B -->
+<!-- FRONT DOOR CAMERA B MENU-->
           <div class="devices-menus__fdcb">
 
             <div class="section-heading">
@@ -299,12 +301,37 @@
 
           </div>
 
-<!-- FRONT DOOR LOCK -->
+<!-- FRONT DOOR LOCK MENU-->
         <div class="devices-menus__fdl">
           <div class="section-heading">
             <h1 class="section-heading__title">Front Door<br>Lock</h1>
             <img class="section-heading__close fdlClose" src="images/icons/cross.png" alt="menu close button">
           </div>
+
+          <div class="devices-menu__content">
+
+            <div class="devices-menu__fdl--on">
+              <img src="images/icons/lock-o.png" alt="Active camera icon">
+              <h2>Locked</h2>
+            </div>
+
+            <div class="devices-menu__fdl--off">
+              <img src="images/icons/lock-open-w.png" alt="Active camera icon">
+              <h2>Unlocked</h2>
+            </div>
+
+            <div class="devices-menu__fdl-alert--on">
+              <img src="images/icons/bell-o.png" alt="Active camera icon">
+              <h2>Alerts<br>On</h2>
+            </div>
+
+            <div class="devices-menu__fdl-alert--off">
+              <img src="images/icons/bell-w.png" alt="Active camera icon">
+              <h2>Alerts<br>Off</h2>
+            </div>
+
+          </div>
+
         </div>
 
 <!-- HALLWAY ALARM -->
@@ -354,6 +381,32 @@
         </div>
 
       </div> <!--END OF DEVICE MENU SECTION -->
+
+
+<!-- LOCK LOCK PASSWORD -->
+      <div class="lock-password fdl__lock-password">
+        <img class="lock-password__close fdl__lock-close" src="images/icons/cross.png" alt="menu close button">
+
+        <form class="lock-password__form fdl__lock-form" method="post" onsubmit="return false">
+          <input type="text" name="password" placeholder="enter password" maxlength="10" required autocomplete="off" style="width: 80%; margin: 5% 10%;">
+          <br>
+          <input class="lock-password__sumbit" type="submit" value="Unlock">
+        </form>
+
+      </div>
+
+
+<!-- LOCK ALERT PASSWORD -->
+      <div class="lock-password fdl__alert-password">
+        <img class="lock-password__close fdl__alert-close" src="images/icons/cross.png" alt="menu close button">
+
+        <form class="lock-password__form fdl__alert-form" method="post" onsubmit="return false">
+          <input type="text" name="password" placeholder="enter password" maxlength="10" required autocomplete="off" style="width: 80%; margin: 5% 10%;">
+          <br>
+          <input class="lock-password__sumbit" type="submit" value="Unlock">
+        </form>
+
+      </div>
 
 
 <!-- FRONT DOOR ROOM CONTAIN -->
@@ -409,7 +462,8 @@
         <div class="devices__carousel">
 
           <div class="devices__carousel--item fdl">
-            <img src="images/icons/lock-b.png" alt="inactive lock icon">
+            <img class="fdl__off" src="images/icons/lock-open-b.png" alt="inactive lock icon">
+            <img class="fdl__on" src="images/icons/lock-o.png" alt="inactive lock icon">
             <h3>Front Door<br>Lock</h3>
           </div>
 

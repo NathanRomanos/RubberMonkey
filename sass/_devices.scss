@@ -144,6 +144,7 @@
   grid-template-columns: 100vw;
   justify-items: center;
   align-content: space-around;
+  text-align: center;
   img{
     height: 80px;
   }
@@ -161,6 +162,42 @@
 
 .devices-menu__fdca--off:active{
   transform: scale(0.9);
+}
+
+
+// LOCK PASSWORD
+.lock-password{
+  display: none;
+  position: absolute;
+  top: 45vh;
+  left: 15vw;
+  width: 70vw;
+  height: 20vh;
+  z-index: 10;
+  background-color: $color1;
+  img{
+    float: right;
+    width: 20px;
+    margin: 5% 5% 0 0;
+  }
+  form{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.lock-password__close:active{
+  transform: scale(0.9);
+}
+
+.lock-password__sumbit{
+  width: 80px;
+  height: 30px;
+  background-color: $color2;
+  border: 0px;
+  border-radius: 10px;
+  color: $color3;
+  font-family: 'Comfortaa', cursive;
 }
 
 // HIDDEN ICONS
@@ -186,6 +223,15 @@
   display: none;
 }
 
+.fdl__on{
+  display: none;
+}
+.devices-menu__fdl--on{
+  display: none;
+}
+.devices-menu__fdl-alert--off{
+  display: none;
+}
 
 // VIEW FEED
 .feed-contain__close{
@@ -205,6 +251,10 @@
     display: none;
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background-position: $color1;
     background-image: url('../images/front-door-view-sw.jpg');
     background-position: center;
@@ -214,6 +264,10 @@
 
 .fdcb-feed-contain{
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     width: 100vw;
     height: 100vh;
     background-position: $color1;
@@ -227,6 +281,10 @@
     display: none;
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background-position: $color1;
     background-image: url('../images/front-door-view-c-sw.jpg');
     background-position: center;

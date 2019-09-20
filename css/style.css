@@ -236,7 +236,8 @@ nav {
   height: 85vh;
   grid-template-columns: 100vw;
   justify-items: center;
-  align-content: space-around; }
+  align-content: space-around;
+  text-align: center; }
   .devices-menu__content img {
     height: 80px; }
   .devices-menu__content h2 {
@@ -249,6 +250,35 @@ nav {
 
 .devices-menu__fdca--off:active {
   transform: scale(0.9); }
+
+.lock-password {
+  display: none;
+  position: absolute;
+  top: 45vh;
+  left: 15vw;
+  width: 70vw;
+  height: 20vh;
+  z-index: 10;
+  background-color: #27374b; }
+  .lock-password img {
+    float: right;
+    width: 20px;
+    margin: 5% 5% 0 0; }
+  .lock-password form {
+    width: 100%;
+    text-align: center; }
+
+.lock-password__close:active {
+  transform: scale(0.9); }
+
+.lock-password__sumbit {
+  width: 80px;
+  height: 30px;
+  background-color: #374b69;
+  border: 0px;
+  border-radius: 10px;
+  color: #fe8c26;
+  font-family: 'Comfortaa', cursive; }
 
 .fdca__off {
   display: none; }
@@ -268,6 +298,15 @@ nav {
 .devices-menu__hwc--on {
   display: none; }
 
+.fdl__on {
+  display: none; }
+
+.devices-menu__fdl--on {
+  display: none; }
+
+.devices-menu__fdl-alert--off {
+  display: none; }
+
 .feed-contain__close {
   position: absolute;
   bottom: 9vw;
@@ -282,6 +321,10 @@ nav {
   display: none;
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   background-position: #27374b;
   background-image: url("../images/front-door-view-sw.jpg");
   background-position: center;
@@ -290,6 +333,10 @@ nav {
 
 .fdcb-feed-contain {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   background-position: #27374b;
@@ -302,6 +349,10 @@ nav {
   display: none;
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
   background-position: #27374b;
   background-image: url("../images/front-door-view-c-sw.jpg");
   background-position: center;
