@@ -205,7 +205,13 @@
 .fdca__off{
   display: none;
 }
+.fdca__record{
+  display: none;
+}
 .devices-menu__fdca--off{
+  display: none;
+}
+.devices-menu__fdca-record--on{
   display: none;
 }
 
@@ -230,6 +236,26 @@
   display: none;
 }
 .devices-menu__fdl-alert--off{
+  display: none;
+}
+
+.hws__on{
+  display: none;
+}
+.devices-menu__hws--on{
+  display: none;
+}
+.devices-menu__hws-alert--off{
+  display: none;
+}
+
+.gs__off{
+  display: none;
+}
+.devices-menu__gs--off{
+  display: none;
+}
+.devices-menu__gs-alert--off{
   display: none;
 }
 

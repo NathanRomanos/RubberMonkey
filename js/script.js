@@ -106,6 +106,7 @@ $(document).ready(function(){
   });
   $('.fdlClose').click(function(){
     $('.devices-menus, .devices-menus__fdl').fadeToggle(200);
+    $('.fdl__lock-password').hide();
   });
 
 
@@ -130,6 +131,7 @@ $(document).ready(function(){
   });
   $('.hwsClose').click(function(){
     $('.devices-menus, .devices-menus__hws').fadeToggle(200);
+    $('.hws__lock-password').hide();
   });
 
 
@@ -138,17 +140,28 @@ $(document).ready(function(){
   });
   $('.gsClose').click(function(){
     $('.devices-menus, .devices-menus__gs').fadeToggle(200);
+    $('.gs__lock-password').hide();
   });
 
 
 // FRONT DOOR CAMERA-A
   $('.devices-menu__fdca--on').click(function(){
-    $('.devices-menu__fdca--off, .devices-menu__fdca--on').toggle();
-    $('.fdca__off, .fdca__on').toggle();
+    $('.fdca__record, .fdca__on, .devices-menu__fdca-record--on, .devices-menu__fdca--on').hide();
+    $('.fdca__off, .devices-menu__fdca-record--off, .devices-menu__fdca--off').show();
   });
   $('.devices-menu__fdca--off').click(function(){
-    $('.devices-menu__fdca--off, .devices-menu__fdca--on').toggle();
-    $('.fdca__off, .fdca__on').toggle();
+    $('.devices-menu__fdca--on, .fdca__on').show();
+    $('.devices-menu__fdca--off, .fdca__off').hide();
+  });
+  $('.devices-menu__fdca-record--off').click(function(){
+    $('.devices-menu__fdca-record--off, .devices-menu__fdca-record--on').toggle();
+    $('.fdca__off, .fdca__on, .devices-menu__fdca--off').hide();
+    $('.fdca__record, .devices-menu__fdca--on').show();
+  });
+  $('.devices-menu__fdca-record--on').click(function(){
+    $('.devices-menu__fdca-record--off, .devices-menu__fdca-record--on').toggle();
+    $('.fdca__record').hide();
+    $('.fdca__on').show();
   });
 
   $('.fdca__feed').click(function(){
@@ -223,6 +236,54 @@ $(document).ready(function(){
       $('.devices-menus__hwc, .hwc-feed-contain').fadeToggle(200);
       $('.bottomNav').show(1000)
     });
+
+
+// HALLWAY SENSOR
+  $('.devices-menu__hws--off, .devices-menu__hws--on').click(function(){
+    $('.hws__lock-password').toggle(200);
+  });
+  $('.hws__lock-close').click(function(){
+    $('.hws__lock-password').toggle(200);
+  });
+  $('.hws__lock-form').submit(function(){
+    $('.devices-menu__hws--off, .devices-menu__hws--on').toggle();
+    $('.hws__off, .hws__on, .hws__lock-password').toggle(200);
+  });
+
+  $('.devices-menu__hws-alert--off, .devices-menu__hws-alert--on').click(function(){
+    $('.hws__alert-password').toggle(200);
+  });
+  $('.hws__alert-close').click(function(){
+    $('.hws__alert-password').toggle(200);
+  });
+  $('.hws__alert-form').submit(function(){
+    $('.devices-menu__hws-alert--off, .devices-menu__hws-alert--on').toggle();
+    $('hws__alert-password').toggle(200);
+  });
+
+
+// GARAGE SENSOR
+  $('.devices-menu__gs--off, .devices-menu__gs--on').click(function(){
+    $('.gs__lock-password').toggle(200);
+  });
+  $('.gs__lock-close').click(function(){
+    $('.gs__lock-password').toggle(200);
+  });
+  $('.gs__lock-form').submit(function(){
+    $('.devices-menu__gs--off, .devices-menu__gs--on').toggle();
+    $('.gs__off, .gs__on, .gs__lock-password').toggle(200);
+  });
+
+  $('.devices-menu__gs-alert--off, .devices-menu__gs-alert--on').click(function(){
+    $('.gs__alert-password').toggle(200);
+  });
+  $('.gs__alert-close').click(function(){
+    $('.gs__alert-password').toggle(200);
+  });
+  $('.gs__alert-form').submit(function(){
+    $('.devices-menu__gs-alert--off, .devices-menu__gs-alert--on').toggle();
+    $('gs__alert-password').toggle(200);
+  });
 
 
 // CAROUSEL SLICK

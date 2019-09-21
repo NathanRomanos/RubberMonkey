@@ -283,7 +283,13 @@ nav {
 .fdca__off {
   display: none; }
 
+.fdca__record {
+  display: none; }
+
 .devices-menu__fdca--off {
+  display: none; }
+
+.devices-menu__fdca-record--on {
   display: none; }
 
 .fdcb__off {
@@ -305,6 +311,24 @@ nav {
   display: none; }
 
 .devices-menu__fdl-alert--off {
+  display: none; }
+
+.hws__on {
+  display: none; }
+
+.devices-menu__hws--on {
+  display: none; }
+
+.devices-menu__hws-alert--off {
+  display: none; }
+
+.gs__off {
+  display: none; }
+
+.devices-menu__gs--off {
+  display: none; }
+
+.devices-menu__gs-alert--off {
   display: none; }
 
 .feed-contain__close {
@@ -523,7 +547,8 @@ nav {
 .hallway-contain {
   display: none;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 80px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
   background: #151828;
   /* Old browsers */
