@@ -129,7 +129,8 @@
             </div>
 
             <div class="devices__carousel--item hwa">
-              <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
+              <img class="hwa__off" src="images/icons/shield-b.png" alt="inactive lock icon">
+              <img class="hwa__on" src="images/icons/shield-o.png" alt="inactive lock icon">
               <h3>Hallway<br>Alarm</h3>
             </div>
 
@@ -161,6 +162,7 @@
               <div class="devices__view-all--item fdca">
                 <img class="fdca__on" src="images/icons/camera-o.png" alt="Active camera icon">
                 <img class="fdca__off" src="images/icons/camera-b.png" alt="Active camera icon">
+                <img class="fdca__record" src="images/icons/camera-record.png" alt="Recording camera icon">
                 <h3>Front Door<br>Camera-A</h3>
               </div>
 
@@ -177,7 +179,8 @@
               </div>
 
               <div class="devices__view-all--item hwa">
-                <img src="images/icons/shield-b.png" alt="Inactive alarm icon">
+                <img class="hwa__off" src="images/icons/shield-b.png" alt="inactive lock icon">
+                <img class="hwa__on" src="images/icons/shield-o.png" alt="inactive alarm icon">
                 <h3>Hallway<br>Alarm</h3>
               </div>
 
@@ -384,6 +387,56 @@
             <h1 class="section-heading__title">Hallway<br>Alarm</h1>
             <img class="section-heading__close hwaClose" src="images/icons/cross.png" alt="menu close button">
           </div>
+
+          <div class="devices-menu__content">
+
+            <div class="devices-menu__hwa--on">
+              <img src="images/icons/shield-o.png" alt="Active shield icon">
+              <h2>Armed</h2>
+            </div>
+
+            <div class="devices-menu__hwa--off">
+              <img src="images/icons/shield-w.png" alt="inactive shield icon">
+              <h2>Unarmed</h2>
+            </div>
+
+            <div class="devices-menu__hwa-alert--on">
+              <img src="images/icons/bell-o.png" alt="Active alert icon">
+              <h2>Alerts<br>On</h2>
+            </div>
+
+            <div class="devices-menu__hwa-alert--off">
+              <img src="images/icons/bell-w.png" alt="Inactive alert icon">
+              <h2>Alerts<br>Off</h2>
+            </div>
+
+          </div>
+
+<!-- HWS SENSOR PASSWORD -->
+          <div class="lock-password hwa__lock-password">
+            <img class="lock-password__close hwa__lock-close" src="images/icons/cross.png" alt="menu close button">
+
+            <form class="lock-password__form hwa__lock-form" method="post" onsubmit="return false">
+              <input type="text" name="password" placeholder="enter password" maxlength="10" required autocomplete="off" style="width: 80%; margin: 5% 10%;">
+              <br>
+              <input class="lock-password__sumbit" type="submit" value="Enter">
+            </form>
+
+          </div>
+
+
+<!-- HWS ALERT PASSWORD -->
+          <div class="lock-password hwa__alert-password">
+            <img class="lock-password__close hwa__alert-close" src="images/icons/cross.png" alt="menu close button">
+
+            <form class="lock-password__form hwa__alert-form" method="post" onsubmit="return false">
+              <input type="text" name="password" placeholder="enter password" maxlength="10" required autocomplete="off" style="width: 80%; margin: 5% 10%;">
+              <br>
+              <input class="lock-password__sumbit" type="submit" value="Enter">
+            </form>
+
+          </div>
+
         </div>
 
 <!-- HALLWAY CAMERA -->
@@ -407,7 +460,7 @@
             </div>
 
             <div class="devices-menu__feed hwc__feed">
-              <img src="images/icons/front-door-view-c-icon.png" alt="Active camera icon">
+              <img src="images/icons/blank-view-icon.png" alt="Active camera icon">
               <h2>View Feed</h2>
             </div>
 
@@ -558,11 +611,11 @@
 
         <div class="devices__titles">
           <h2 class="devices__titles--devices">Cameras</h2>
-          <h4 class="devices__titles--view-all">view all</h4>
-          <h4 class="devices__titles--view-less">view less</h4>
+          <h4 class="camera-devices__titles--view-all">view all</h4>
+          <h4 class="camera-devices__titles--view-less">view less</h4>
         </div>
 
-        <div class="devices__carousel">
+        <div class="camera-devices__carousel">
 
           <div class="devices__carousel--item fdcb">
             <img class="fdcb__on" src="images/icons/camera-o.png" alt="Active camera icon">
@@ -573,15 +626,46 @@
           <div class="devices__carousel--item fdca">
             <img class="fdca__on" src="images/icons/camera-o.png" alt="Active camera icon">
             <img class="fdca__off" src="images/icons/camera-b.png" alt="Inactive camera icon">
+            <img class="fdca__record" src="images/icons/camera-record.png" alt="Recording camera icon">
             <h3>Front Door<br>Camera-A</h3>
           </div>
         </div> <!-- END OF DEVICE CAROUSEL -->
+
+
+<!-- CAMERAS VIEW ALL -->
+        <div class="camera-devices__hidden">
+          <div class="camera-devices__view-all">
+
+            <div class="camera-devices__view-all--item fdca">
+              <img class="fdca__on" src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdca__off" src="images/icons/camera-b.png" alt="Active camera icon">
+              <img class="fdca__record" src="images/icons/camera-record.png" alt="Recording camera icon">
+              <h3>Front Door<br>Camera-A</h3>
+            </div>
+
+            <div class="camera-devices__view-all--feed">
+              <img class="fdca__feed" src="images/icons/front-door-view-icon.png" alt="">
+            </div>
+
+            <div class="camera-devices__view-all--item fdcb">
+              <img class="fdcb__on" src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="fdcb__off" src="images/icons/camera-b.png" alt="Active camera icon">
+              <h3>Front Door<br>Camera-B</h3>
+            </div>
+
+            <div class="camera-devices__view-all--feed">
+              <img class="fdcb__feed" src="images/icons/front-door-view-c-icon.png" alt="">
+            </div>
+
+          </div>
+        </div>
+
 
         <div class="devices__titles">
           <h2 class="devices__titles--devices">Locks</h2>
         </div>
 
-        <div class="devices__carousel">
+        <div class="devices__carousel--1">
 
           <div class="devices__carousel--item fdl">
             <img class="fdl__off" src="images/icons/lock-open-b.png" alt="inactive lock icon">
@@ -620,9 +704,11 @@
       <div class="devices">
         <div class="devices__titles">
           <h2 class="devices__titles--devices">Cameras</h2>
+          <h4 class="camera-devices__titles--view-all">view all</h4>
+          <h4 class="camera-devices__titles--view-less">view less</h4>
         </div>
 
-      <div class="devices__carousel">
+      <div class="camera-devices__carousel">
 
         <div class="devices__carousel--item hwc">
           <img class="hwc__on" src="images/icons/camera-o.png" alt="Active camera icon">
@@ -632,14 +718,33 @@
 
       </div> <!-- END OF DEVICE CAROUSEL -->
 
+<!-- CAMERAS VIEW ALL -->
+        <div class="camera-devices__hidden">
+          <div class="camera-devices__view-all">
+
+            <div class="camera-devices__view-all--item fdca">
+              <img class="hwc__on" src="images/icons/camera-o.png" alt="Active camera icon">
+              <img class="hwc__off" src="images/icons/camera-b.png" alt="Inactive camera icon">
+              <h3>Hallway<br>Camera</h3>
+            </div>
+
+            <div class="camera-devices__view-all--feed">
+              <img class="hwc__feed" src="images/icons/blank-view-icon.png" alt="">
+            </div>
+
+          </div>
+        </div>
+
+
       <div class="devices__titles">
         <h2 class="devices__titles--devices">Alarms</h2>
       </div>
 
-    <div class="devices__carousel">
+    <div class="devices__carousel--1">
 
       <div class="devices__carousel--item gs">
-        <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
+        <img class="hwa__off" src="images/icons/shield-b.png" alt="inactive lock icon">
+        <img class="hwa__on" src="images/icons/shield-o.png" alt="inactive alarm icon">
         <h3>Hallway<br>Alarm</h3>
       </div>
 
@@ -649,7 +754,7 @@
       <h2 class="devices__titles--devices">Sensors</h2>
     </div>
 
-  <div class="devices__carousel">
+  <div class="devices__carousel--1">
 
     <div class="devices__carousel--item hws">
       <img class="hws__off" src="images/icons/sensor-b.png" alt="inactive lock icon">
@@ -690,7 +795,7 @@
           <h2 class="devices__titles--devices">Sensors</h2>
         </div>
 
-      <div class="devices__carousel">
+      <div class="devices__carousel--1">
 
         <div class="devices__carousel--item gs">
           <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
@@ -775,9 +880,45 @@
     <div class="settings-contain">
 
       <div class="section-heading">
-        <h1 class="section-heading__title">secure monkey settings</h1>
+        <h1 class="section-heading__title">Secure Monkey Settings</h1>
 
         <img class="section-heading__close settings-close" src="images/icons/cross.png" alt="settings menu close button">
+      </div>
+
+      <div class="settings-grid">
+
+        <div class="settings-grid__item--header"> <h4>Notifications</h4> </div>
+
+        <div class="settings-grid__item">
+          <div class="settings-grid__item--text">
+            <h3>Push</h3>
+          </div>
+          <img class="settings-grid__push--on" src="images/icons/on.png" alt="">
+          <img class="settings-grid__push--off" src="images/icons/off.png" alt="">
+        </div>
+
+        <div class="settings-grid__item"> <hr> </div>
+
+        <div class="settings-grid__item">
+          <div class="settings-grid__item--text">
+            <h3>Text</h3>
+            <p>0271234567</p>
+          </div>
+          <img class="settings-grid__text--on" src="images/icons/on.png" alt="">
+          <img class="settings-grid__text--off" src="images/icons/off.png" alt="">
+        </div>
+
+        <div class="settings-grid__item"> <hr> </div>
+
+        <div class="settings-grid__item">
+          <div class="settings-grid__item--text">
+            <h3>Email</h3>
+            <p>julian.hitchchild@gmail.com</p>
+          </div>
+          <img class="settings-grid__email--on" src="images/icons/on.png" alt="">
+          <img class="settings-grid__email--off" src="images/icons/off.png" alt="">
+        </div>
+
       </div>
 
     </div> <!-- SETTINGS CONTAIN DIV ENDS HERE -->

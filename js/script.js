@@ -21,23 +21,37 @@ $(document).ready(function(){
 
 
   $('.add-d').click(function(){
-    $('.add-d-contain, .contain, .burger-menu__list--hidden, .bottomNav').fadeToggle(200);
+    $('.add-d-contain').show(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
   });
   $('.add-d-close').click(function(){
-    $('.add-d-contain, .contain, .bottomNav').fadeToggle(200);
+    $('.add-d-contain, .contain').fadeToggle(200);
     $('.burgerMenu').hide();
+    $('.bottomNav').show();
   });
 
 
 //MENU SETTINGS FUNCTIONS
   $('.settings').click(function(){
-    $('.settings-contain, .contain, .burgerMenu').fadeToggle(200);
-    $('.burger-menu__list--hidden').hide(200);
+    $('.settings-contain').show(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
   });
   $('.settings-close').click(function(){
-    $('.settings-contain').fadeToggle(200);
-    $('.contain').fadeToggle(200);
+    $('.settings-contain, .contain').fadeToggle(200);
     $('.burgerMenu').hide();
+    $('.bottomNav').show();
+  });
+
+  $('.settings-grid__push--off, .settings-grid__push--on').click(function(){
+    $('.settings-grid__push--on, .settings-grid__push--off').toggle();
+  });
+
+  $('.settings-grid__text--off, .settings-grid__text--on').click(function(){
+    $('.settings-grid__text--on, .settings-grid__text--off').toggle();
+  });
+
+  $('.settings-grid__email--off, .settings-grid__email--on').click(function(){
+    $('.settings-grid__email--on, .settings-grid__email--off').toggle();
   });
 
 
@@ -58,6 +72,11 @@ $(document).ready(function(){
     $('.contain, .front-door-contain').fadeToggle(200);
   });
 
+  $('.camera-devices__titles--view-all, .camera-devices__titles--view-less').click(function(){
+    $('.camera-devices__hidden, .camera-devices__carousel').toggle(200);
+    $('.camera-devices__titles--view-all, .camera-devices__titles--view-less').toggle();
+  });
+
 
 // HALLWAY PAGE
     $('.rooms__hallway').click(function(){
@@ -67,7 +86,7 @@ $(document).ready(function(){
       $('.contain, .hallway-contain').fadeToggle(200);
     });
 
-// HALLWAY PAGE
+// GARAGE PAGE
     $('.rooms__garage').click(function(){
       $('.contain, .garage-contain').fadeToggle(200);
     });
@@ -238,6 +257,31 @@ $(document).ready(function(){
     });
 
 
+
+// HALLWAY ALARM
+  $('.devices-menu__hwa--off, .devices-menu__hwa--on').click(function(){
+    $('.hwa__lock-password').toggle(200);
+  });
+  $('.hwa__lock-close').click(function(){
+    $('.hwa__lock-password').toggle(200);
+  });
+  $('.hwa__lock-form').submit(function(){
+    $('.devices-menu__hwa--off, .devices-menu__hwa--on').toggle();
+    $('.hwa__off, .hwa__on, .hwa__lock-password').toggle(200);
+  });
+
+  $('.devices-menu__hwa-alert--off, .devices-menu__hwa-alert--on').click(function(){
+    $('.hwa__alert-password').toggle(200);
+  });
+  $('.hwa__alert-close').click(function(){
+    $('.hwa__alert-password').toggle(200);
+  });
+  $('.hwa__alert-form').submit(function(){
+    $('.devices-menu__hwa-alert--off, .devices-menu__hwa-alert--on').toggle();
+    $('.hwa__alert-password').toggle(200);
+  });
+
+
 // HALLWAY SENSOR
   $('.devices-menu__hws--off, .devices-menu__hws--on').click(function(){
     $('.hws__lock-password').toggle(200);
@@ -258,7 +302,7 @@ $(document).ready(function(){
   });
   $('.hws__alert-form').submit(function(){
     $('.devices-menu__hws-alert--off, .devices-menu__hws-alert--on').toggle();
-    $('hws__alert-password').toggle(200);
+    $('.hws__alert-password').toggle(200);
   });
 
 
@@ -282,7 +326,7 @@ $(document).ready(function(){
   });
   $('.gs__alert-form').submit(function(){
     $('.devices-menu__gs-alert--off, .devices-menu__gs-alert--on').toggle();
-    $('gs__alert-password').toggle(200);
+    $('.gs__alert-password').toggle(200);
   });
 
 
@@ -293,7 +337,7 @@ $(document).ready(function(){
     variableWidth: true
   });
 
-  $(".devices__carousel").slick({
+  $(".devices__carousel, .camera-devices__carousel, .devices__carousel--1").slick({
     dots: true,
     infinite: true,
     variableWidth: true

@@ -4,3 +4,45 @@
   height: 100vh;
   background-color: $color1;
 }
+
+.settings-grid{
+  margin-top: 5vh;
+  height: 35vh;
+  display: grid;
+  align-content: space-evenly;
+  grid-template-rows: 2vh 10vh 1vh 10vh 1vh 10vh;
+  background-color: $color2;
+}
+
+.settings-grid__item{
+  align-self: center;
+  margin-left: 5%;
+  hr{
+    border-color: $color1;
+    width: 95%;
+    margin-right: 5%;
+  }
+  img{
+    height: 45px;
+    float: right;
+    margin-right: 5%;
+  }
+}
+
+.settings-grid__item--header{
+  align-self: end;
+  padding-top: 7vh;
+  background-color: $color1;
+  padding-left: 5%;
+}
+
+.settings-grid__item--text{
+  float: left;
+  h3{
+    font-size: 1.2rem;
+  }
+}
+
+.settings-grid__push--off, .settings-grid__text--off, .settings-grid__email--off{
+  display: none;
+}

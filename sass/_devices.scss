@@ -9,13 +9,12 @@
   justify-content: space-between;
 }
 
-.devices__titles--view-all{
-  display: block;
+.devices__titles--view-all, .camera-devices__titles--view-less{
   margin-right: 5%;
   color: $color3;
 }
 
-.devices__titles--view-less{
+.devices__titles--view-less, .camera-devices__titles--view-all{
   display: none;
   margin-right: 5%;
   color: $color3;
@@ -23,10 +22,14 @@
 
 
 // CAROUSEL SETTINGS
-.devices__carousel{
+.devices__carousel, .camera-devices__carousel, .devices__carousel--1{
   height: 22vh;
   width: 85%;
   margin: 5%;
+}
+
+.camera-devices__carousel{
+  display: none;
 }
 
 .devices__carousel--item{
@@ -65,6 +68,11 @@
   margin-right: 5%;
 }
 
+.camera-devices__view-all{
+  display: grid;
+  grid-template-columns: 35vw 55vw;
+}
+
 .devices__view-all--item{
   background-color: $color4;
   width: 35vw;
@@ -83,6 +91,36 @@
     color: $color1;
     width: 100%;
     margin-left: 5%;
+  }
+}
+
+.camera-devices__view-all--item{
+  background-color: $color4;
+  width: 100%;
+  height: 35vw;
+  margin: 5vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img{
+    height: 50%;
+  }
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    color: $color1;
+    width: 100%;
+    margin-left: 5%;
+  }
+}
+
+.camera-devices__view-all--feed{
+  margin: 5vw 0;
+  padding-left: 5vw;
+  img{
+    width: 100%;
+    height: 35vw;
   }
 }
 
@@ -239,6 +277,16 @@
   display: none;
 }
 
+.hwa__on{
+  display: none;
+}
+.devices-menu__hwa--on{
+  display: none;
+}
+.devices-menu__hwa-alert--on{
+  display: none;
+}
+
 .hws__on{
   display: none;
 }
@@ -277,7 +325,7 @@
     display: none;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -290,7 +338,7 @@
 
 .fdcb-feed-contain{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -307,7 +355,7 @@
     display: none;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
