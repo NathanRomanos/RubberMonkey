@@ -197,7 +197,8 @@
               </div>
 
               <div class="devices__view-all--item gs">
-                <img src="images/icons/sensor-o.png" alt="Inactive alarm icon">
+                <img class="gs__off" src="images/icons/sensor-b.png" alt="inactive lock icon">
+                <img class="gs__on" src="images/icons/sensor-o.png" alt="inactive lock icon">
                 <h3>Garage<br>sensor</h3>
               </div>
             </div>
@@ -529,7 +530,7 @@
         <div class="devices-menus__gs">
           <div class="section-heading">
             <h1 class="section-heading__title">Garage<br>Sensor</h1>
-            <img class="section-heading__close hwsClose" src="images/icons/cross.png" alt="menu close button">
+            <img class="section-heading__close gsClose" src="images/icons/cross.png" alt="menu close button">
           </div>
 
           <div class="devices-menu__content">
@@ -556,7 +557,7 @@
 
           </div>
 
-<!-- HWS SENSOR PASSWORD -->
+<!-- GS SENSOR PASSWORD -->
           <div class="lock-password gs__lock-password">
             <img class="lock-password__close gs__lock-close" src="images/icons/cross.png" alt="menu close button">
 
@@ -569,7 +570,7 @@
           </div>
 
 
-<!-- HWS ALERT PASSWORD -->
+<!-- GS ALERT PASSWORD -->
           <div class="lock-password gs__alert-password">
             <img class="lock-password__close gs__alert-close" src="images/icons/cross.png" alt="menu close button">
 
@@ -875,7 +876,7 @@
             <img class="fdcb__feed" src="images/icons/front-door-view-c-icon.png" alt="">
           </div>
 
-        </div>
+        </div> <!-- VIEW ALL ENDS HERE -->
 
         <div class="devices__titles">
           <h2 class="devices__titles--devices">Hallway</h2>
@@ -893,9 +894,137 @@
             <img class="hwc__feed" src="images/icons/blank-view-icon.png" alt="">
           </div>
 
+        </div> <!-- VIEW ALL ENDS HERE -->
+
+      </div> <!-- DEVICES DIV HERE -->
+
+    </div> <!-- CAMERA PAGE ENDS HERE -->
+
+
+<!-- SENSORS PAGE CONTAIN -->
+    <div class="sensor-contain">
+
+      <div class="heading">
+
+          <div class="heading__title">
+            <h1>Sensors</h1>
+          </div>
+
+          <div class="heading__burger">
+            <img class="burger" src="images/icons/burger.svg" alt="settings menu button">
+          </div>
+
+          <div class="heading__bell">
+            <img class="bell" src="images/icons/bell-w.svg" alt="notifications button">
+          </div>
+
+      </div> <!-- END OF HEADING -->
+
+      <div class="devices">
+
+        <div class="devices__titles">
+          <h2 class="devices__titles--devices">Hallway</h2>
         </div>
 
-      </div>
+        <div class="camera-devices__view-all">
+          <div class="devices__view-all--item hws">
+            <img class="hws__off" src="images/icons/sensor-b.png" alt="inactive lock icon">
+            <img class="hws__on" src="images/icons/sensor-o.png" alt="inactive lock icon">
+            <h3>Hallway<br>sensor</h3>
+          </div>
+        </div> <!-- VIEW ALL ENDS HERE -->
+
+        <div class="devices__titles">
+          <h2 class="devices__titles--devices">Garage</h2>
+        </div>
+
+        <div class="camera-devices__view-all">
+          <div class="devices__view-all--item gs">
+            <img class="gs__off" src="images/icons/sensor-b.png" alt="inactive lock icon">
+            <img class="gs__on" src="images/icons/sensor-o.png" alt="inactive lock icon">
+            <h3>Garage<br>sensor</h3>
+          </div>
+        </div> <!-- VIEW ALL ENDS HERE -->
+
+      </div> <!-- DEVICES DIV HERE -->
+
+    </div> <!-- SENSORS PAGE ENDS HERE -->
+
+
+<!-- LOCKS PAGE CONTAIN -->
+    <div class="lock-contain">
+
+      <div class="heading">
+
+          <div class="heading__title">
+            <h1>Locks</h1>
+          </div>
+
+          <div class="heading__burger">
+            <img class="burger" src="images/icons/burger.svg" alt="settings menu button">
+          </div>
+
+          <div class="heading__bell">
+            <img class="bell" src="images/icons/bell-w.svg" alt="notifications button">
+          </div>
+
+      </div> <!-- END OF HEADING -->
+
+      <div class="devices">
+
+        <div class="devices__titles">
+          <h2 class="devices__titles--devices">Front Door</h2>
+        </div>
+
+        <div class="camera-devices__view-all">
+          <div class="devices__view-all--item fdl">
+            <img class="fdl__off" src="images/icons/lock-open-b.png" alt="inactive lock icon">
+            <img class="fdl__on" src="images/icons/lock-o.png" alt="inactive lock icon">
+            <h3>Front Door<br>Lock</h3>
+          </div>
+        </div> <!-- VIEW ALL ENDS HERE -->
+
+      </div> <!-- DEVICES DIV HERE -->
+
+    </div> <!-- LOCKS PAGE ENDS HERE -->
+
+
+<!-- ALARMS PAGE CONTAIN -->
+    <div class="alarm-contain">
+
+      <div class="heading">
+
+          <div class="heading__title">
+            <h1>Alarms</h1>
+          </div>
+
+          <div class="heading__burger">
+            <img class="burger" src="images/icons/burger.svg" alt="settings menu button">
+          </div>
+
+          <div class="heading__bell">
+            <img class="bell" src="images/icons/bell-w.svg" alt="notifications button">
+          </div>
+
+      </div> <!-- END OF HEADING -->
+
+      <div class="devices">
+
+        <div class="devices__titles">
+          <h2 class="devices__titles--devices">Hallway</h2>
+        </div>
+
+        <div class="camera-devices__view-all">
+          <div class="devices__view-all--item hwa">
+            <img class="hwa__off" src="images/icons/shield-b.png" alt="inactive lock icon">
+            <img class="hwa__on" src="images/icons/shield-o.png" alt="inactive alarm icon">
+            <h3>Hallway<br>Alarm</h3>
+          </div>
+        </div> <!-- VIEW ALL ENDS HERE -->
+
+      </div> <!-- DEVICES DIV HERE -->
+
+    </div> <!-- LOCKS PAGE ENDS HERE -->
 
 
 <!-- ADD DEVICES SECTION -->
@@ -990,6 +1119,21 @@
           <img class="settings-grid__email--off" src="images/icons/off.png" alt="">
         </div>
 
+        <div class="settings-grid__item--header"> <h4>Language</h4> </div>
+
+        <div class="settings-grid__item">
+          <div class="settings-grid__item--text">
+            <h3 class="settings-grid__item--english">English</h3>
+            <h3 class="settings-grid__item--maori">Te reo Māori</h3>
+          </div>
+        </div>
+
+      </div> <!-- GRID ENDS HERE -->
+
+      <div class="settings-grid__dropdown">
+          <h4 class="settings-grid__dropdown--english">English</h4>
+          <br>
+          <h4 class="settings-grid__dropdown--maori">Te Reo</h4>
       </div>
 
     </div> <!-- SETTINGS CONTAIN DIV ENDS HERE -->
@@ -1003,7 +1147,7 @@
         <div class="bottom-nav__scroll">
           <div class="bottom-nav__camera"><img src="images/icons/camera-w.png" alt=""></div>
           <div class="bottom-nav__lock"><img src="images/icons/lock-w.png" alt=""></div>
-          <div class="bottom-nav__shield"><img src="images/icons/shield-w.png" alt=""></div>
+          <div class="bottom-nav__alarm"><img src="images/icons/shield-w.png" alt=""></div>
           <div class="bottom-nav__sensor"><img src="images/icons/sensor-w.png" alt=""></div>
         </div>
 

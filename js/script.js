@@ -16,25 +16,25 @@ $(document).ready(function(){
 
 
   $('.add-d').click(function(){
-    $('.add-d-contain').show(200);
-    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
+    $('.add-d-contain').fadeIn(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottom-nav').fadeOut(200);
   });
   $('.add-d-close').click(function(){
     $('.add-d-contain, .contain').fadeToggle(200);
     $('.burgerMenu').hide();
-    $('.bottomNav').show();
+    $('.bottom-nav').show();
   });
 
 
 //MENU SETTINGS FUNCTIONS
   $('.settings').click(function(){
-    $('.settings-contain').show(200);
-    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
+    $('.settings-contain').fadeIn(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottom-nav').fadeOut(200);
   });
   $('.settings-close').click(function(){
     $('.settings-contain, .contain').fadeToggle(200);
     $('.burgerMenu').hide();
-    $('.bottomNav').show();
+    $('.bottom-nav').show();
   });
 
   $('.settings-grid__push--off, .settings-grid__push--on').click(function(){
@@ -47,6 +47,20 @@ $(document).ready(function(){
 
   $('.settings-grid__email--off, .settings-grid__email--on').click(function(){
     $('.settings-grid__email--on, .settings-grid__email--off').toggle();
+  });
+
+  $('.settings-grid__item--english, .settings-grid__item--maori').click(function(){
+    $('.settings-grid__dropdown').fadeToggle(200);
+  });
+  $('.settings-grid__dropdown--english').click(function(){
+    $('.settings-grid__item--english').show(200);
+    $('.settings-grid__item--maori').hide(200);
+    $('.settings-grid__dropdown').fadeToggle(200);
+  });
+  $('.settings-grid__dropdown--maori').click(function(){
+    $('.settings-grid__item--maori').show(200);
+    $('.settings-grid__item--english').hide(200);
+    $('.settings-grid__dropdown').fadeToggle(200);
   });
 
 
@@ -180,11 +194,11 @@ $(document).ready(function(){
 
   $('.fdca__feed').click(function(){
     $('.devices-menus__fdca, .fdca-feed-contain').fadeToggle(200);
-    $('.bottomNav').hide()
+    $('.bottom-nav').hide()
   });
   $('.fdca-feed__close').click(function(){
     $('.devices-menus__fdca, .fdca-feed-contain').fadeToggle(200);
-    $('.bottomNav').show(1000)
+    $('.bottom-nav').show(1000)
   });
 
 
@@ -200,11 +214,11 @@ $(document).ready(function(){
 
   $('.fdcb__feed').click(function(){
     $('.devices-menus__fdcb, .fdcb-feed-contain').fadeToggle(200);
-    $('.bottomNav').hide()
+    $('.bottom-nav').hide()
   });
   $('.fdcb-feed__close').click(function(){
     $('.devices-menus__fdcb, .fdcb-feed-contain').fadeToggle(200);
-    $('.bottomNav').show(1000)
+    $('.bottom-nav').show(1000)
   });
 
 
@@ -244,11 +258,11 @@ $(document).ready(function(){
 
     $('.hwc__feed').click(function(){
       $('.devices-menus__hwc, .hwc-feed-contain').fadeToggle(200);
-      $('.bottomNav').hide()
+      $('.bottom-nav').hide()
     });
     $('.hwc-feed__close').click(function(){
       $('.devices-menus__hwc, .hwc-feed-contain').fadeToggle(200);
-      $('.bottomNav').show(1000)
+      $('.bottom-nav').show(1000)
     });
 
 
@@ -328,7 +342,23 @@ $(document).ready(function(){
 // BOTTOM NAV
   $('.bottom-nav__home').click(function(){
     $('.contain').fadeIn(200)
-    $('.front-door-contain, .hallway-contain, .garage-contain').fadeOut(200)
+    $('.front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain').fadeOut(200)
+  });
+  $('.bottom-nav__camera').click(function(){
+    $('.camera-contain').fadeIn(200)
+    $('.contain, .front-door-contain, .hallway-contain, .garage-contain, .lock-contain, .alarm-contain, .sensor-contain').fadeOut(200)
+  });
+  $('.bottom-nav__lock').click(function(){
+    $('.lock-contain').fadeIn(200)
+    $('.contain, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .alarm-contain, .sensor-contain').fadeOut(200)
+  });
+  $('.bottom-nav__alarm').click(function(){
+    $('.alarm-contain').fadeIn(200)
+    $('.contain, .front-door-contain, .hallway-contain, .garage-contain, .lock-contain, .camera-contain, .sensor-contain').fadeOut(200)
+  });
+  $('.bottom-nav__sensor').click(function(){
+    $('.sensor-contain').fadeIn(200)
+    $('.contain, .front-door-contain, .hallway-contain, .garage-contain, .lock-contain, .alarm-contain, .camera-contain').fadeOut(200)
   });
 
 

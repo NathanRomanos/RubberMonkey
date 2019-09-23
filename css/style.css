@@ -184,7 +184,7 @@ nav {
 .camera-devices__view-all {
   display: grid;
   grid-template-columns: 35vw 55vw;
-  margin-bottom: 5vh; }
+  margin-bottom: 10vh; }
 
 .devices__view-all--item {
   background-color: #c4ccde;
@@ -564,10 +564,9 @@ nav {
 
 .settings-grid {
   margin-top: 5vh;
-  height: 35vh;
   display: grid;
   align-content: space-evenly;
-  grid-template-rows: 2vh 10vh 1vh 10vh 1vh 10vh;
+  grid-template-rows: 2vh 10vh 1vh 10vh 1vh 10vh 10vh 10vh;
   background-color: #374b69; }
 
 .settings-grid__item {
@@ -594,6 +593,17 @@ nav {
     font-size: 1.2rem; }
 
 .settings-grid__push--off, .settings-grid__text--off, .settings-grid__email--off {
+  display: none; }
+
+.settings-grid__dropdown {
+  display: none;
+  width: 100vw;
+  position: absolute;
+  bottom: 20vh;
+  padding: 5%;
+  background-color: #374b69; }
+
+.settings-grid__item--maori {
   display: none; }
 
 .front-door-contain {
@@ -661,7 +671,8 @@ nav {
   background-position: top;
   background-size: cover; }
 
-.camera-contain {
+.camera-contain, .sensor-contain, .lock-contain, .alarm-contain {
+  display: none;
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 80px;

@@ -1,5 +1,5 @@
-.camera-contain{
-  // display: none;
+.camera-contain, .sensor-contain, .lock-contain, .alarm-contain{
+  display: none;
   width: 100vw;
   min-height: 100vh;
   padding-bottom: 80px;

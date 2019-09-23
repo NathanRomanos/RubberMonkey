@@ -7,10 +7,9 @@
 
 .settings-grid{
   margin-top: 5vh;
-  height: 35vh;
   display: grid;
   align-content: space-evenly;
-  grid-template-rows: 2vh 10vh 1vh 10vh 1vh 10vh;
+  grid-template-rows: 2vh 10vh 1vh 10vh 1vh 10vh 10vh 10vh;
   background-color: $color2;
 }
 
@@ -44,5 +43,18 @@
 }
 
 .settings-grid__push--off, .settings-grid__text--off, .settings-grid__email--off{
+  display: none;
+}
+
+.settings-grid__dropdown{
+  display: none;
+  width: 100vw;
+  position: absolute;
+  bottom: 20vh;
+  padding: 5%;
+  background-color: $color2;
+}
+
+.settings-grid__item--maori{
   display: none;
 }
