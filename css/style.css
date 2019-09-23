@@ -6,32 +6,32 @@
   font-family: sans-serif;
   scroll-behavior: smooth; }
 
-.topNav {
+.heading {
   width: 100vw;
   padding: 5%; }
 
-.topNav__title {
+.heading__title {
   float: left;
   width: 50%;
   text-shadow: 0px 0px 5px #27374b; }
 
-.topNav__bell {
+.heading__bell {
   float: right; }
-  .topNav__bell img {
+  .heading__bell img {
     width: 50px;
     margin: -5px; }
 
-.topNav__bell:active {
+.heading__bell:active {
   transform: scale(0.9); }
 
-.topNav__burger {
+.heading__burger {
   float: right;
   margin-left: 10%; }
-  .topNav__burger img {
+  .heading__burger img {
     width: 50px;
     margin: -5px; }
 
-.topNav__burger:active {
+.heading__burger:active {
   transform: scale(0.9); }
 
 nav {
@@ -40,23 +40,23 @@ nav {
   width: 100vw;
   background-color: #374b69; }
 
-.bottomNav__home {
+.bottom-nav__home {
   float: left;
   height: 50px;
   margin: 10px 5%; }
 
-.bottomNav__home:active {
+.bottom-nav__home:active {
   transform: scale(0.9); }
 
-.bottomNav__scroll {
+.bottom-nav__scroll {
   float: right;
   height: 60px;
   width: 120px;
   margin-right: 50px; }
-  .bottomNav__scroll img {
+  .bottom-nav__scroll img {
     height: 50px;
     margin-top: 10px; }
-  .bottomNav__scroll img:active {
+  .bottom-nav__scroll img:active {
     transform: scale(0.9); }
 
 .burgerMenu {
@@ -183,7 +183,8 @@ nav {
 
 .camera-devices__view-all {
   display: grid;
-  grid-template-columns: 35vw 55vw; }
+  grid-template-columns: 35vw 55vw;
+  margin-bottom: 5vh; }
 
 .devices__view-all--item {
   background-color: #c4ccde;
@@ -659,6 +660,22 @@ nav {
   background-image: url("../images/garage.jpg");
   background-position: top;
   background-size: cover; }
+
+.camera-contain {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#151828+0,27374b+50,374b69+100 */
+  background: #151828;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #151828 0%, #27374b 50%, #374b69 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151828', endColorstr='#374b69',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 body {
   background-color: #27374b; }

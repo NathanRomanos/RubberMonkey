@@ -8,11 +8,6 @@ $(document).ready(function(){
     $('.burger-menu__list--hidden').hide(200);
   });
 
-  $('.bottomNav__home').click(function(){
-    $('.contain').fadeIn(200)
-    $('.front-door-contain, .hallway-contain, .garage-contain').fadeOut(200)
-  });
-
 
 // MENU ADD FUNCTIONS
   $('.add').click(function(){
@@ -22,7 +17,7 @@ $(document).ready(function(){
 
   $('.add-d').click(function(){
     $('.add-d-contain').show(200);
-    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
   });
   $('.add-d-close').click(function(){
     $('.add-d-contain, .contain').fadeToggle(200);
@@ -34,7 +29,7 @@ $(document).ready(function(){
 //MENU SETTINGS FUNCTIONS
   $('.settings').click(function(){
     $('.settings-contain').show(200);
-    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
+    $('.contain, .burgerMenu, .front-door-contain, .hallway-contain, .garage-contain, .camera-contain, .lock-contain, .alarm-contain, .sensor-contain, .burger-menu__list--hidden, .bottomNav').hide(200);
   });
   $('.settings-close').click(function(){
     $('.settings-contain, .contain').fadeToggle(200);
@@ -330,6 +325,13 @@ $(document).ready(function(){
   });
 
 
+// BOTTOM NAV
+  $('.bottom-nav__home').click(function(){
+    $('.contain').fadeIn(200)
+    $('.front-door-contain, .hallway-contain, .garage-contain').fadeOut(200)
+  });
+
+
 // CAROUSEL SLICK
   $(".rooms__carousel").slick({
     dots: true,
@@ -343,7 +345,7 @@ $(document).ready(function(){
     variableWidth: true
   });
 
-  $(".bottomNav__scroll").slick({
+  $(".bottom-nav__scroll").slick({
     infinite: true,
     centerMode: true,
     slidesToShow: 1,
