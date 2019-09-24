@@ -113,7 +113,8 @@ nav {
 .burger-menu__logo {
   position: absolute;
   bottom: 5vw;
-  left: 5vw; }
+  left: 5vw;
+  pointer-events: none; }
   .burger-menu__logo img {
     width: 40%;
     display: inline-block; }
