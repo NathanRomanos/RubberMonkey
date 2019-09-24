@@ -44,34 +44,34 @@ $(document).ready(function(){
 
 // TUTORIAL FUNCTIONS
 $('.tutorial-title').click(function(){
-  $('.tutorial-1, .tutorial-title').toggle();
+  $('.tutorial-1, .tutorial-title, .tutorial-close').toggle();
 });
 $('.tutorial-1').click(function(){
-  $('.tutorial-1, .tutorial-2').toggle(200);
+  $('.tutorial-1, .tutorial-2').toggle();
 });
 $('.tutorial-2').click(function(){
-  $('.tutorial-2, .tutorial-3').toggle(200);
+  $('.tutorial-2, .tutorial-3').toggle();
 });
 $('.tutorial-3').click(function(){
-  $('.tutorial-3, .tutorial-4').toggle(200);
+  $('.tutorial-3, .tutorial-4').toggle();
 });
 $('.tutorial-4').click(function(){
-  $('.tutorial-4, .tutorial-5').toggle(200);
+  $('.tutorial-4, .tutorial-5').toggle();
 });
 $('.tutorial-5').click(function(){
-  $('.tutorial-5, .tutorial-6').toggle(200);
+  $('.tutorial-5, .tutorial-6').toggle();
 });
 $('.tutorial-6').click(function(){
-  $('.tutorial-6, .tutorial-7').toggle(200);
+  $('.tutorial-6, .tutorial-7').toggle();
 });
 $('.tutorial-7').click(function(){
-  $('.tutorial-7, .tutorial-8').toggle(200);
+  $('.tutorial-7, .tutorial-8').toggle();
 });
 $('.tutorial-8').click(function(){
-  $('.tutorial-8, .tutorial-9').toggle(200);
+  $('.tutorial-8, .tutorial-9').toggle();
 });
 $('.tutorial-9').click(function(){
-  $('.tutorial').fadeToggle(200);
+  $('.tutorial-9, .tutorial-contain').fadeToggle();
 });
 
 

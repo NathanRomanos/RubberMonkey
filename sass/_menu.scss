@@ -94,18 +94,22 @@ img:active{
   left: 0;
   z-index: 10;
   background-color: $color1;
-  img{
-    width: 100vw;
-    height: 100vh;
-  }
 }
 
 .tutorial-close{
-  float: right;
-  margin: 5%;
   width: 40px;
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
 }
 
-.tutorial-1{
+.tutorial-title{
+  width: 100vw;
+  height: 100vh;
+}
+
+.tutorial-1, .tutorial-2, .tutorial-3, .tutorial-4, .tutorial-5, .tutorial-6, .tutorial-7, .tutorial-8, .tutorial-9{
   display: none;
+  width: 100vw;
+  height: 100vh;
 }

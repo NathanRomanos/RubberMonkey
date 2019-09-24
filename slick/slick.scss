@@ -2,7 +2,6 @@
 
 .slick-slider {
     position: relative;
-    display: block;
     box-sizing: border-box;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -69,7 +68,7 @@
         float: right;
     }
     img {
-        display: block;
+        
     }
     &.slick-loading img {
         display: none;
