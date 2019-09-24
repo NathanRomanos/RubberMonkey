@@ -5,13 +5,14 @@ $(document).ready(function(){
   });
   $('.burgerClose').click(function(){
     $('.burgerMenu').fadeToggle(200);
-    $('.burger-menu__list--hidden').hide(200);
+    $('.burger-menu__list--add, .burger-menu__list--help').hide(200);
   });
 
 
 // MENU ADD FUNCTIONS
   $('.add').click(function(){
-    $('.burger-menu__list--hidden').toggle(200);
+    $('.burger-menu__list--add').toggle(200);
+    $('.burger-menu__list--help').hide(200);
   });
 
 
@@ -24,6 +25,55 @@ $(document).ready(function(){
     $('.burgerMenu').hide();
     $('.bottom-nav').show();
   });
+
+
+// MENU HELP FUNCTIONS
+  $('.help').click(function(){
+    $('.burger-menu__list--help').toggle(200);
+    $('.burger-menu__list--add').hide(200);
+  });
+
+
+  $('.tutorial').click(function(){
+    $('.tutorial-contain, .burgerMenu, .burger-menu__list--help').fadeToggle(200);
+  });
+  $('.tutorial-close').click(function(){
+    $('.tutorial-contain').fadeToggle(200);
+  });
+
+
+// TUTORIAL FUNCTIONS
+$('.tutorial-title').click(function(){
+  $('.tutorial-1, .tutorial-title').toggle();
+});
+$('.tutorial-1').click(function(){
+  $('.tutorial-1, .tutorial-2').toggle(200);
+});
+$('.tutorial-2').click(function(){
+  $('.tutorial-2, .tutorial-3').toggle(200);
+});
+$('.tutorial-3').click(function(){
+  $('.tutorial-3, .tutorial-4').toggle(200);
+});
+$('.tutorial-4').click(function(){
+  $('.tutorial-4, .tutorial-5').toggle(200);
+});
+$('.tutorial-5').click(function(){
+  $('.tutorial-5, .tutorial-6').toggle(200);
+});
+$('.tutorial-6').click(function(){
+  $('.tutorial-6, .tutorial-7').toggle(200);
+});
+$('.tutorial-7').click(function(){
+  $('.tutorial-7, .tutorial-8').toggle(200);
+});
+$('.tutorial-8').click(function(){
+  $('.tutorial-8, .tutorial-9').toggle(200);
+});
+$('.tutorial-9').click(function(){
+  $('.tutorial').fadeToggle(200);
+});
+
 
 
 //MENU SETTINGS FUNCTIONS

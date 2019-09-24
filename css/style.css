@@ -122,10 +122,31 @@ nav {
     width: 50%;
     margin-left: 5%; }
 
-.burger-menu__list--hidden {
+.burger-menu__list--add, .burger-menu__list--help {
   display: none;
   font-size: 0.8rem;
   background-color: #374b69; }
+
+.tutorial-contain {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #27374b; }
+  .tutorial-contain img {
+    width: 100vw;
+    height: 100vh; }
+
+.tutorial-close {
+  float: right;
+  margin: 5%;
+  width: 40px; }
+
+.tutorial-1 {
+  display: none; }
 
 .devices {
   display: block;

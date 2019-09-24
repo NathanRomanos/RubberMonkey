@@ -77,8 +77,35 @@ img:active{
 
 
 // HIDDEN LIST ITEMS
-.burger-menu__list--hidden{
+.burger-menu__list--add, .burger-menu__list--help{
   display: none;
   font-size: 0.8rem;
   background-color: $color2;
+}
+
+
+// TUTORIAL SCREEN
+.tutorial-contain{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $color1;
+  img{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.tutorial-close{
+  float: right;
+  margin: 5%;
+  width: 40px;
+}
+
+.tutorial-1{
+  display: none;
 }
